@@ -2,11 +2,11 @@
 
 <h1>Compra Barato</h1>
 
-<h3><em>Diseñado en IDE Visual studio code utilizando como framework Angular, conectandose a una API REST creada con SpringBoot</em></h3>
+<h3><em>Diseñado en IDE Eclipse utilizando como framework Spring Boot de Java, implementando Eureka server, Selenium como dependencia de scrap, y la API de Twilio para gestionar la entrega de mensajes via WhatsApp</em></h3>
 
 <h3>Es una aplicación que se encarga de hacer el scrapping de algunos supermercados como Consum y Mercadona (proximamente implementando nuevos supermercados) para luego ofrecerte una lista de productos con los cuales poder hacer una comparativa. Adicional la opcion de crear una lista de compras con los productos seleccionados y enviara como mensaje vía WhatsApp.</h3>
 
-<br/>
+<h2>Link al repositorio de front-end Angular: <a href="https://github.com/amf-dev-gh/compra-barato-front">Compra Barato Angular</a></h2>
 
 <hr/>
 <p>Creador: Andres Mariano Fernández</p>
