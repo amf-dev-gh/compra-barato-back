@@ -1,0 +1,978 @@
+2025-03-17T10:52:15.045+01:00  INFO 6264 --- [microservice-scrap-consum] [restartedMain] c.a.s.MicroserviceScrapConsumApplication : Starting MicroserviceScrapConsumApplication using Java 21.0.4 with PID 6264 (C:\Users\Andres\Documents\Programacion 2025\Proyectos\Compra barato-back\microservice-scrap-consum\target\classes started by Andres in C:\Users\Andres\Documents\Programacion 2025\Proyectos\Compra barato-back\microservice-scrap-consum)
+2025-03-17T10:52:15.054+01:00  INFO 6264 --- [microservice-scrap-consum] [restartedMain] c.a.s.MicroserviceScrapConsumApplication : No active profile set, falling back to 1 default profile: "default"
+2025-03-17T10:52:15.149+01:00  INFO 6264 --- [microservice-scrap-consum] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-03-17T10:52:15.150+01:00  INFO 6264 --- [microservice-scrap-consum] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-03-17T10:52:16.250+01:00  INFO 6264 --- [microservice-scrap-consum] [restartedMain] o.s.cloud.context.scope.GenericScope     : BeanFactory id=de10869b-9718-3907-a387-9f7d53abf9fa
+2025-03-17T10:52:16.669+01:00  INFO 6264 --- [microservice-scrap-consum] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 0 (http)
+2025-03-17T10:52:16.685+01:00  INFO 6264 --- [microservice-scrap-consum] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-03-17T10:52:16.685+01:00  INFO 6264 --- [microservice-scrap-consum] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.36]
+2025-03-17T10:52:16.770+01:00  INFO 6264 --- [microservice-scrap-consum] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-03-17T10:52:16.771+01:00  INFO 6264 --- [microservice-scrap-consum] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1621 ms
+2025-03-17T10:52:17.403+01:00  INFO 6264 --- [microservice-scrap-consum] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2025-03-17T10:52:17.494+01:00  INFO 6264 --- [microservice-scrap-consum] [restartedMain] DiscoveryClientOptionalArgsConfiguration : Eureka HTTP Client uses RestTemplate.
+2025-03-17T10:52:17.660+01:00  INFO 6264 --- [microservice-scrap-consum] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 50276 (http) with context path '/'
+2025-03-17T10:52:17.662+01:00  INFO 6264 --- [microservice-scrap-consum] [restartedMain] .s.c.n.e.s.EurekaAutoServiceRegistration : Updating port to 50276
+2025-03-17T10:52:17.669+01:00  INFO 6264 --- [microservice-scrap-consum] [restartedMain] o.s.c.n.eureka.InstanceInfoFactory       : Setting initial instance status as: STARTING
+2025-03-17T10:52:17.700+01:00  INFO 6264 --- [microservice-scrap-consum] [restartedMain] com.netflix.discovery.DiscoveryClient    : Initializing Eureka in region us-east-1
+2025-03-17T10:52:17.706+01:00  INFO 6264 --- [microservice-scrap-consum] [restartedMain] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-03-17T10:52:17.721+01:00  INFO 6264 --- [microservice-scrap-consum] [restartedMain] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+2025-03-17T10:52:17.721+01:00  INFO 6264 --- [microservice-scrap-consum] [restartedMain] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+2025-03-17T10:52:17.722+01:00  INFO 6264 --- [microservice-scrap-consum] [restartedMain] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+2025-03-17T10:52:17.722+01:00  INFO 6264 --- [microservice-scrap-consum] [restartedMain] com.netflix.discovery.DiscoveryClient    : Application is null : false
+2025-03-17T10:52:17.722+01:00  INFO 6264 --- [microservice-scrap-consum] [restartedMain] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+2025-03-17T10:52:17.722+01:00  INFO 6264 --- [microservice-scrap-consum] [restartedMain] com.netflix.discovery.DiscoveryClient    : Application version is -1: true
+2025-03-17T10:52:17.722+01:00  INFO 6264 --- [microservice-scrap-consum] [restartedMain] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+2025-03-17T10:52:18.433+01:00  INFO 6264 --- [microservice-scrap-consum] [restartedMain] com.netflix.discovery.DiscoveryClient    : The response status is 200
+2025-03-17T10:52:18.434+01:00  INFO 6264 --- [microservice-scrap-consum] [restartedMain] com.netflix.discovery.DiscoveryClient    : Starting heartbeat executor: renew interval is: 30
+2025-03-17T10:52:18.436+01:00  INFO 6264 --- [microservice-scrap-consum] [restartedMain] c.n.discovery.InstanceInfoReplicator     : InstanceInfoReplicator onDemand update allowed rate per min is 4
+2025-03-17T10:52:18.438+01:00  INFO 6264 --- [microservice-scrap-consum] [restartedMain] com.netflix.discovery.DiscoveryClient    : Discovery Client initialized at timestamp 1742205138437 with initial instances count: 0
+2025-03-17T10:52:18.441+01:00  INFO 6264 --- [microservice-scrap-consum] [restartedMain] o.s.c.n.e.s.EurekaServiceRegistry        : Registering application MICROSERVICE-SCRAP-CONSUM with eureka with status UP
+2025-03-17T10:52:18.442+01:00  INFO 6264 --- [microservice-scrap-consum] [restartedMain] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1742205138442, current=UP, previous=STARTING]
+2025-03-17T10:52:18.444+01:00  INFO 6264 --- [microservice-scrap-consum] [DiscoveryClient-InstanceInfoReplicator-%d] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_MICROSERVICE-SCRAP-CONSUM/microservice-scrap-consum:ae4602f234e4fb542a3d6f28cc4a0e09: registering service...
+2025-03-17T10:52:18.458+01:00  INFO 6264 --- [microservice-scrap-consum] [restartedMain] c.a.s.MicroserviceScrapConsumApplication : Started MicroserviceScrapConsumApplication in 4.03 seconds (process running for 5.334)
+2025-03-17T10:52:18.570+01:00  INFO 6264 --- [microservice-scrap-consum] [DiscoveryClient-InstanceInfoReplicator-%d] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_MICROSERVICE-SCRAP-CONSUM/microservice-scrap-consum:ae4602f234e4fb542a3d6f28cc4a0e09 - registration status: 204
+2025-03-17T10:52:48.447+01:00  INFO 6264 --- [microservice-scrap-consum] [DiscoveryClient-CacheRefreshExecutor-%d] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+2025-03-17T10:52:48.448+01:00  INFO 6264 --- [microservice-scrap-consum] [DiscoveryClient-CacheRefreshExecutor-%d] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+2025-03-17T10:52:48.448+01:00  INFO 6264 --- [microservice-scrap-consum] [DiscoveryClient-CacheRefreshExecutor-%d] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+2025-03-17T10:52:48.448+01:00  INFO 6264 --- [microservice-scrap-consum] [DiscoveryClient-CacheRefreshExecutor-%d] com.netflix.discovery.DiscoveryClient    : Application is null : false
+2025-03-17T10:52:48.448+01:00  INFO 6264 --- [microservice-scrap-consum] [DiscoveryClient-CacheRefreshExecutor-%d] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+2025-03-17T10:52:48.449+01:00  INFO 6264 --- [microservice-scrap-consum] [DiscoveryClient-CacheRefreshExecutor-%d] com.netflix.discovery.DiscoveryClient    : Application version is -1: false
+2025-03-17T10:52:48.451+01:00  INFO 6264 --- [microservice-scrap-consum] [DiscoveryClient-CacheRefreshExecutor-%d] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+2025-03-17T10:52:48.514+01:00  INFO 6264 --- [microservice-scrap-consum] [DiscoveryClient-CacheRefreshExecutor-%d] com.netflix.discovery.DiscoveryClient    : The response status is 200
+2025-03-17T10:52:52.024+01:00  INFO 6264 --- [microservice-scrap-consum] [http-nio-auto-1-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-03-17T10:52:52.024+01:00  INFO 6264 --- [microservice-scrap-consum] [http-nio-auto-1-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-03-17T10:52:52.027+01:00  INFO 6264 --- [microservice-scrap-consum] [http-nio-auto-1-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2025-03-17T10:52:52.067+01:00  INFO 6264 --- [microservice-scrap-consum] [http-nio-auto-1-exec-1] c.a.scrap.controller.ScrapController     : ---------> BUSCANDO PRODUCTOS - REST CONTROLLER (microservice-scrap-consum)
+2025-03-17T10:52:52.785+01:00  INFO 6264 --- [microservice-scrap-consum] [http-nio-auto-1-exec-1] i.g.bonigarcia.wdm.WebDriverManager      : Using chromedriver 134.0.6998.88 (resolved driver for Chrome 134)
+2025-03-17T10:52:52.827+01:00  INFO 6264 --- [microservice-scrap-consum] [http-nio-auto-1-exec-1] i.g.bonigarcia.wdm.WebDriverManager      : Exporting webdriver.chrome.driver as C:\Users\Andres\.cache\selenium\chromedriver\win64\134.0.6998.88\chromedriver.exe
+2025-03-17T10:52:54.030+01:00  WARN 6264 --- [microservice-scrap-consum] [http-nio-auto-1-exec-1] o.o.selenium.devtools.CdpVersionFinder   : Unable to find CDP implementation matching 134
+2025-03-17T10:52:54.032+01:00  WARN 6264 --- [microservice-scrap-consum] [http-nio-auto-1-exec-1] o.o.selenium.chromium.ChromiumDriver     : Unable to find version of CDP to use for 134.0.6998.89. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.25.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
+2025-03-17T10:53:09.181+01:00  INFO 6264 --- [microservice-scrap-consum] [http-nio-auto-1-exec-1] c.a.scrap.service.impl.ScrapServiceImpl  : ----------> TIEMPO TRANSCURRIDO: 17 SEGUNDOS.
+2025-03-17T10:53:09.181+01:00  INFO 6264 --- [microservice-scrap-consum] [http-nio-auto-1-exec-1] c.a.scrap.service.impl.ScrapServiceImpl  : ----------> FIN DE BUSCAR PRODUCTOS
+2025-03-17T10:54:18.250+01:00  INFO 6264 --- [microservice-scrap-consum] [http-nio-auto-1-exec-3] c.a.scrap.controller.ScrapController     : ---------> BUSCANDO PRODUCTOS - REST CONTROLLER (microservice-scrap-consum)
+2025-03-17T10:54:18.271+01:00  INFO 6264 --- [microservice-scrap-consum] [http-nio-auto-1-exec-3] i.g.bonigarcia.wdm.WebDriverManager      : Using chromedriver 134.0.6998.88 (resolved driver for Chrome 134)
+2025-03-17T10:54:18.282+01:00  INFO 6264 --- [microservice-scrap-consum] [http-nio-auto-1-exec-3] i.g.bonigarcia.wdm.WebDriverManager      : Exporting webdriver.chrome.driver as C:\Users\Andres\.cache\selenium\chromedriver\win64\134.0.6998.88\chromedriver.exe
+2025-03-17T10:54:19.035+01:00  WARN 6264 --- [microservice-scrap-consum] [http-nio-auto-1-exec-3] o.o.selenium.devtools.CdpVersionFinder   : Unable to find CDP implementation matching 134
+2025-03-17T10:54:19.035+01:00  WARN 6264 --- [microservice-scrap-consum] [http-nio-auto-1-exec-3] o.o.selenium.chromium.ChromiumDriver     : Unable to find version of CDP to use for 134.0.6998.89. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.25.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
+2025-03-17T10:54:42.823+01:00  INFO 6264 --- [microservice-scrap-consum] [http-nio-auto-1-exec-3] c.a.scrap.service.impl.ScrapServiceImpl  : ----------> TIEMPO TRANSCURRIDO: 24 SEGUNDOS.
+2025-03-17T10:54:42.823+01:00  INFO 6264 --- [microservice-scrap-consum] [http-nio-auto-1-exec-3] c.a.scrap.service.impl.ScrapServiceImpl  : ----------> FIN DE BUSCAR PRODUCTOS
+2025-03-17T10:56:06.228+01:00  INFO 6264 --- [microservice-scrap-consum] [http-nio-auto-1-exec-5] c.a.scrap.controller.ScrapController     : ---------> BUSCANDO PRODUCTOS - REST CONTROLLER (microservice-scrap-consum)
+2025-03-17T10:56:06.261+01:00  INFO 6264 --- [microservice-scrap-consum] [http-nio-auto-1-exec-5] i.g.bonigarcia.wdm.WebDriverManager      : Using chromedriver 134.0.6998.88 (resolved driver for Chrome 134)
+2025-03-17T10:56:06.274+01:00  INFO 6264 --- [microservice-scrap-consum] [http-nio-auto-1-exec-5] i.g.bonigarcia.wdm.WebDriverManager      : Exporting webdriver.chrome.driver as C:\Users\Andres\.cache\selenium\chromedriver\win64\134.0.6998.88\chromedriver.exe
+2025-03-17T10:56:06.936+01:00  WARN 6264 --- [microservice-scrap-consum] [http-nio-auto-1-exec-5] o.o.selenium.devtools.CdpVersionFinder   : Unable to find CDP implementation matching 134
+2025-03-17T10:56:06.936+01:00  WARN 6264 --- [microservice-scrap-consum] [http-nio-auto-1-exec-5] o.o.selenium.chromium.ChromiumDriver     : Unable to find version of CDP to use for 134.0.6998.89. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.25.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
+2025-03-17T10:56:25.790+01:00  INFO 6264 --- [microservice-scrap-consum] [http-nio-auto-1-exec-5] c.a.scrap.service.impl.ScrapServiceImpl  : ----------> TIEMPO TRANSCURRIDO: 19 SEGUNDOS.
+2025-03-17T10:56:25.790+01:00  INFO 6264 --- [microservice-scrap-consum] [http-nio-auto-1-exec-5] c.a.scrap.service.impl.ScrapServiceImpl  : ----------> FIN DE BUSCAR PRODUCTOS
+2025-03-17T10:57:17.739+01:00  INFO 6264 --- [microservice-scrap-consum] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-03-17T10:57:18.465+01:00  INFO 6264 --- [microservice-scrap-consum] [http-nio-auto-1-exec-6] c.a.scrap.controller.ScrapController     : ---------> BUSCANDO PRODUCTOS - REST CONTROLLER (microservice-scrap-consum)
+2025-03-17T10:57:18.482+01:00  INFO 6264 --- [microservice-scrap-consum] [http-nio-auto-1-exec-6] i.g.bonigarcia.wdm.WebDriverManager      : Using chromedriver 134.0.6998.88 (resolved driver for Chrome 134)
+2025-03-17T10:57:18.491+01:00  INFO 6264 --- [microservice-scrap-consum] [http-nio-auto-1-exec-6] i.g.bonigarcia.wdm.WebDriverManager      : Exporting webdriver.chrome.driver as C:\Users\Andres\.cache\selenium\chromedriver\win64\134.0.6998.88\chromedriver.exe
+2025-03-17T10:57:19.167+01:00  WARN 6264 --- [microservice-scrap-consum] [http-nio-auto-1-exec-6] o.o.selenium.devtools.CdpVersionFinder   : Unable to find CDP implementation matching 134
+2025-03-17T10:57:19.167+01:00  WARN 6264 --- [microservice-scrap-consum] [http-nio-auto-1-exec-6] o.o.selenium.chromium.ChromiumDriver     : Unable to find version of CDP to use for 134.0.6998.89. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.25.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
+2025-03-17T10:57:33.307+01:00  INFO 6264 --- [microservice-scrap-consum] [http-nio-auto-1-exec-6] c.a.scrap.service.impl.ScrapServiceImpl  : ----------> TIEMPO TRANSCURRIDO: 14 SEGUNDOS.
+2025-03-17T10:57:33.308+01:00  INFO 6264 --- [microservice-scrap-consum] [http-nio-auto-1-exec-6] c.a.scrap.service.impl.ScrapServiceImpl  : ----------> FIN DE BUSCAR PRODUCTOS
+2025-03-17T10:59:25.581+01:00  INFO 6264 --- [microservice-scrap-consum] [http-nio-auto-1-exec-8] c.a.scrap.controller.ScrapController     : ---------> BUSCANDO PRODUCTOS - REST CONTROLLER (microservice-scrap-consum)
+2025-03-17T10:59:25.595+01:00  INFO 6264 --- [microservice-scrap-consum] [http-nio-auto-1-exec-8] i.g.bonigarcia.wdm.WebDriverManager      : Using chromedriver 134.0.6998.88 (resolved driver for Chrome 134)
+2025-03-17T10:59:25.602+01:00  INFO 6264 --- [microservice-scrap-consum] [http-nio-auto-1-exec-8] i.g.bonigarcia.wdm.WebDriverManager      : Exporting webdriver.chrome.driver as C:\Users\Andres\.cache\selenium\chromedriver\win64\134.0.6998.88\chromedriver.exe
+2025-03-17T10:59:26.309+01:00  WARN 6264 --- [microservice-scrap-consum] [http-nio-auto-1-exec-8] o.o.selenium.devtools.CdpVersionFinder   : Unable to find CDP implementation matching 134
+2025-03-17T10:59:26.309+01:00  WARN 6264 --- [microservice-scrap-consum] [http-nio-auto-1-exec-8] o.o.selenium.chromium.ChromiumDriver     : Unable to find version of CDP to use for 134.0.6998.89. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.25.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
+2025-03-17T10:59:40.213+01:00  INFO 6264 --- [microservice-scrap-consum] [http-nio-auto-1-exec-8] c.a.scrap.service.impl.ScrapServiceImpl  : ----------> TIEMPO TRANSCURRIDO: 14 SEGUNDOS.
+2025-03-17T10:59:40.214+01:00  INFO 6264 --- [microservice-scrap-consum] [http-nio-auto-1-exec-8] c.a.scrap.service.impl.ScrapServiceImpl  : ----------> FIN DE BUSCAR PRODUCTOS
+2025-03-17T11:00:12.171+01:00  INFO 6264 --- [microservice-scrap-consum] [http-nio-auto-1-exec-9] c.a.scrap.controller.ScrapController     : ---------> BUSCANDO PRODUCTOS - REST CONTROLLER (microservice-scrap-consum)
+2025-03-17T11:00:12.184+01:00  INFO 6264 --- [microservice-scrap-consum] [http-nio-auto-1-exec-9] i.g.bonigarcia.wdm.WebDriverManager      : Using chromedriver 134.0.6998.88 (resolved driver for Chrome 134)
+2025-03-17T11:00:12.192+01:00  INFO 6264 --- [microservice-scrap-consum] [http-nio-auto-1-exec-9] i.g.bonigarcia.wdm.WebDriverManager      : Exporting webdriver.chrome.driver as C:\Users\Andres\.cache\selenium\chromedriver\win64\134.0.6998.88\chromedriver.exe
+2025-03-17T11:00:12.829+01:00  WARN 6264 --- [microservice-scrap-consum] [http-nio-auto-1-exec-9] o.o.selenium.devtools.CdpVersionFinder   : Unable to find CDP implementation matching 134
+2025-03-17T11:00:12.830+01:00  WARN 6264 --- [microservice-scrap-consum] [http-nio-auto-1-exec-9] o.o.selenium.chromium.ChromiumDriver     : Unable to find version of CDP to use for 134.0.6998.89. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.25.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
+2025-03-17T11:00:24.448+01:00  INFO 6264 --- [microservice-scrap-consum] [http-nio-auto-1-exec-9] c.a.scrap.service.impl.ScrapServiceImpl  : ----------> TIEMPO TRANSCURRIDO: 12 SEGUNDOS.
+2025-03-17T11:00:24.448+01:00  INFO 6264 --- [microservice-scrap-consum] [http-nio-auto-1-exec-9] c.a.scrap.service.impl.ScrapServiceImpl  : ----------> FIN DE BUSCAR PRODUCTOS
+2025-03-17T11:01:49.722+01:00  INFO 6264 --- [microservice-scrap-consum] [http-nio-auto-1-exec-10] c.a.scrap.controller.ScrapController     : ---------> BUSCANDO PRODUCTOS - REST CONTROLLER (microservice-scrap-consum)
+2025-03-17T11:01:49.754+01:00  INFO 6264 --- [microservice-scrap-consum] [http-nio-auto-1-exec-10] i.g.bonigarcia.wdm.WebDriverManager      : Using chromedriver 134.0.6998.88 (resolved driver for Chrome 134)
+2025-03-17T11:01:49.770+01:00  INFO 6264 --- [microservice-scrap-consum] [http-nio-auto-1-exec-10] i.g.bonigarcia.wdm.WebDriverManager      : Exporting webdriver.chrome.driver as C:\Users\Andres\.cache\selenium\chromedriver\win64\134.0.6998.88\chromedriver.exe
+2025-03-17T11:01:50.460+01:00  WARN 6264 --- [microservice-scrap-consum] [http-nio-auto-1-exec-10] o.o.selenium.devtools.CdpVersionFinder   : Unable to find CDP implementation matching 134
+2025-03-17T11:01:50.460+01:00  WARN 6264 --- [microservice-scrap-consum] [http-nio-auto-1-exec-10] o.o.selenium.chromium.ChromiumDriver     : Unable to find version of CDP to use for 134.0.6998.89. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.25.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
+2025-03-17T11:01:59.832+01:00  INFO 6264 --- [microservice-scrap-consum] [http-nio-auto-1-exec-1] c.a.scrap.controller.ScrapController     : ---------> BUSCANDO PRODUCTOS - REST CONTROLLER (microservice-scrap-consum)
+2025-03-17T11:01:59.850+01:00  INFO 6264 --- [microservice-scrap-consum] [http-nio-auto-1-exec-1] i.g.bonigarcia.wdm.WebDriverManager      : Using chromedriver 134.0.6998.88 (resolved driver for Chrome 134)
+2025-03-17T11:01:59.859+01:00  INFO 6264 --- [microservice-scrap-consum] [http-nio-auto-1-exec-1] i.g.bonigarcia.wdm.WebDriverManager      : Exporting webdriver.chrome.driver as C:\Users\Andres\.cache\selenium\chromedriver\win64\134.0.6998.88\chromedriver.exe
+2025-03-17T11:02:00.156+01:00  INFO 6264 --- [microservice-scrap-consum] [http-nio-auto-1-exec-10] c.a.scrap.service.impl.ScrapServiceImpl  : ----------> TIEMPO TRANSCURRIDO: 10 SEGUNDOS.
+2025-03-17T11:02:00.156+01:00  INFO 6264 --- [microservice-scrap-consum] [http-nio-auto-1-exec-10] c.a.scrap.service.impl.ScrapServiceImpl  : ----------> FIN DE BUSCAR PRODUCTOS
+2025-03-17T11:02:00.539+01:00  WARN 6264 --- [microservice-scrap-consum] [http-nio-auto-1-exec-1] o.o.selenium.devtools.CdpVersionFinder   : Unable to find CDP implementation matching 134
+2025-03-17T11:02:00.539+01:00  WARN 6264 --- [microservice-scrap-consum] [http-nio-auto-1-exec-1] o.o.selenium.chromium.ChromiumDriver     : Unable to find version of CDP to use for 134.0.6998.89. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.25.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
+2025-03-17T11:02:08.747+01:00  INFO 6264 --- [microservice-scrap-consum] [http-nio-auto-1-exec-1] c.a.scrap.service.impl.ScrapServiceImpl  : ----------> TIEMPO TRANSCURRIDO: 8 SEGUNDOS.
+2025-03-17T11:02:08.747+01:00  INFO 6264 --- [microservice-scrap-consum] [http-nio-auto-1-exec-1] c.a.scrap.service.impl.ScrapServiceImpl  : ----------> FIN DE BUSCAR PRODUCTOS
+2025-03-17T11:02:17.740+01:00  INFO 6264 --- [microservice-scrap-consum] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-03-17T11:02:33.117+01:00  INFO 6264 --- [microservice-scrap-consum] [http-nio-auto-1-exec-2] c.a.scrap.controller.ScrapController     : ---------> BUSCANDO PRODUCTOS - REST CONTROLLER (microservice-scrap-consum)
+2025-03-17T11:02:33.145+01:00  INFO 6264 --- [microservice-scrap-consum] [http-nio-auto-1-exec-2] i.g.bonigarcia.wdm.WebDriverManager      : Using chromedriver 134.0.6998.88 (resolved driver for Chrome 134)
+2025-03-17T11:02:33.153+01:00  INFO 6264 --- [microservice-scrap-consum] [http-nio-auto-1-exec-2] i.g.bonigarcia.wdm.WebDriverManager      : Exporting webdriver.chrome.driver as C:\Users\Andres\.cache\selenium\chromedriver\win64\134.0.6998.88\chromedriver.exe
+2025-03-17T11:02:33.817+01:00  WARN 6264 --- [microservice-scrap-consum] [http-nio-auto-1-exec-2] o.o.selenium.devtools.CdpVersionFinder   : Unable to find CDP implementation matching 134
+2025-03-17T11:02:33.818+01:00  WARN 6264 --- [microservice-scrap-consum] [http-nio-auto-1-exec-2] o.o.selenium.chromium.ChromiumDriver     : Unable to find version of CDP to use for 134.0.6998.89. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.25.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
+2025-03-17T11:02:42.332+01:00  INFO 6264 --- [microservice-scrap-consum] [http-nio-auto-1-exec-2] c.a.scrap.service.impl.ScrapServiceImpl  : ----------> TIEMPO TRANSCURRIDO: 9 SEGUNDOS.
+2025-03-17T11:02:42.332+01:00  INFO 6264 --- [microservice-scrap-consum] [http-nio-auto-1-exec-2] c.a.scrap.service.impl.ScrapServiceImpl  : ----------> FIN DE BUSCAR PRODUCTOS
+2025-03-17T11:04:05.843+01:00  INFO 6264 --- [microservice-scrap-consum] [http-nio-auto-1-exec-5] c.a.scrap.controller.ScrapController     : ---------> BUSCANDO PRODUCTOS - REST CONTROLLER (microservice-scrap-consum)
+2025-03-17T11:04:05.861+01:00  INFO 6264 --- [microservice-scrap-consum] [http-nio-auto-1-exec-5] i.g.bonigarcia.wdm.WebDriverManager      : Using chromedriver 134.0.6998.88 (resolved driver for Chrome 134)
+2025-03-17T11:04:05.871+01:00  INFO 6264 --- [microservice-scrap-consum] [http-nio-auto-1-exec-5] i.g.bonigarcia.wdm.WebDriverManager      : Exporting webdriver.chrome.driver as C:\Users\Andres\.cache\selenium\chromedriver\win64\134.0.6998.88\chromedriver.exe
+2025-03-17T11:04:06.674+01:00  WARN 6264 --- [microservice-scrap-consum] [http-nio-auto-1-exec-5] o.o.selenium.devtools.CdpVersionFinder   : Unable to find CDP implementation matching 134
+2025-03-17T11:04:06.675+01:00  WARN 6264 --- [microservice-scrap-consum] [http-nio-auto-1-exec-5] o.o.selenium.chromium.ChromiumDriver     : Unable to find version of CDP to use for 134.0.6998.89. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.25.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
+2025-03-17T11:04:18.143+01:00  INFO 6264 --- [microservice-scrap-consum] [http-nio-auto-1-exec-5] c.a.scrap.service.impl.ScrapServiceImpl  : ----------> TIEMPO TRANSCURRIDO: 12 SEGUNDOS.
+2025-03-17T11:04:18.143+01:00  INFO 6264 --- [microservice-scrap-consum] [http-nio-auto-1-exec-5] c.a.scrap.service.impl.ScrapServiceImpl  : ----------> FIN DE BUSCAR PRODUCTOS
+2025-03-17T11:07:15.802+01:00  INFO 6264 --- [microservice-scrap-consum] [http-nio-auto-1-exec-7] c.a.scrap.controller.ScrapController     : ---------> BUSCANDO PRODUCTOS - REST CONTROLLER (microservice-scrap-consum)
+2025-03-17T11:07:15.819+01:00  INFO 6264 --- [microservice-scrap-consum] [http-nio-auto-1-exec-7] i.g.bonigarcia.wdm.WebDriverManager      : Using chromedriver 134.0.6998.88 (resolved driver for Chrome 134)
+2025-03-17T11:07:15.831+01:00  INFO 6264 --- [microservice-scrap-consum] [http-nio-auto-1-exec-7] i.g.bonigarcia.wdm.WebDriverManager      : Exporting webdriver.chrome.driver as C:\Users\Andres\.cache\selenium\chromedriver\win64\134.0.6998.88\chromedriver.exe
+2025-03-17T11:07:16.495+01:00  WARN 6264 --- [microservice-scrap-consum] [http-nio-auto-1-exec-7] o.o.selenium.devtools.CdpVersionFinder   : Unable to find CDP implementation matching 134
+2025-03-17T11:07:16.495+01:00  WARN 6264 --- [microservice-scrap-consum] [http-nio-auto-1-exec-7] o.o.selenium.chromium.ChromiumDriver     : Unable to find version of CDP to use for 134.0.6998.89. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.25.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
+2025-03-17T11:07:17.746+01:00  INFO 6264 --- [microservice-scrap-consum] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-03-17T11:07:26.017+01:00  INFO 6264 --- [microservice-scrap-consum] [http-nio-auto-1-exec-7] c.a.scrap.service.impl.ScrapServiceImpl  : ----------> TIEMPO TRANSCURRIDO: 10 SEGUNDOS.
+2025-03-17T11:07:26.018+01:00  INFO 6264 --- [microservice-scrap-consum] [http-nio-auto-1-exec-7] c.a.scrap.service.impl.ScrapServiceImpl  : ----------> FIN DE BUSCAR PRODUCTOS
+2025-03-17T11:12:17.751+01:00  INFO 6264 --- [microservice-scrap-consum] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-03-17T11:13:19.537+01:00  INFO 6264 --- [microservice-scrap-consum] [http-nio-auto-1-exec-9] c.a.scrap.controller.ScrapController     : ---------> BUSCANDO PRODUCTOS - REST CONTROLLER (microservice-scrap-consum)
+2025-03-17T11:13:19.561+01:00  INFO 6264 --- [microservice-scrap-consum] [http-nio-auto-1-exec-9] i.g.bonigarcia.wdm.WebDriverManager      : Using chromedriver 134.0.6998.88 (resolved driver for Chrome 134)
+2025-03-17T11:13:19.571+01:00  INFO 6264 --- [microservice-scrap-consum] [http-nio-auto-1-exec-9] i.g.bonigarcia.wdm.WebDriverManager      : Exporting webdriver.chrome.driver as C:\Users\Andres\.cache\selenium\chromedriver\win64\134.0.6998.88\chromedriver.exe
+2025-03-17T11:13:20.214+01:00  WARN 6264 --- [microservice-scrap-consum] [http-nio-auto-1-exec-9] o.o.selenium.devtools.CdpVersionFinder   : Unable to find CDP implementation matching 134
+2025-03-17T11:13:20.215+01:00  WARN 6264 --- [microservice-scrap-consum] [http-nio-auto-1-exec-9] o.o.selenium.chromium.ChromiumDriver     : Unable to find version of CDP to use for 134.0.6998.89. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.25.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
+2025-03-17T11:13:36.284+01:00  INFO 6264 --- [microservice-scrap-consum] [http-nio-auto-1-exec-9] c.a.scrap.service.impl.ScrapServiceImpl  : ----------> TIEMPO TRANSCURRIDO: 16 SEGUNDOS.
+2025-03-17T11:13:36.284+01:00  INFO 6264 --- [microservice-scrap-consum] [http-nio-auto-1-exec-9] c.a.scrap.service.impl.ScrapServiceImpl  : ----------> FIN DE BUSCAR PRODUCTOS
+2025-03-17T11:17:17.753+01:00  INFO 6264 --- [microservice-scrap-consum] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-03-17T11:18:51.085+01:00  INFO 6264 --- [microservice-scrap-consum] [http-nio-auto-1-exec-1] c.a.scrap.controller.ScrapController     : ---------> BUSCANDO PRODUCTOS - REST CONTROLLER (microservice-scrap-consum)
+2025-03-17T11:18:51.104+01:00  INFO 6264 --- [microservice-scrap-consum] [http-nio-auto-1-exec-1] i.g.bonigarcia.wdm.WebDriverManager      : Using chromedriver 134.0.6998.88 (resolved driver for Chrome 134)
+2025-03-17T11:18:51.111+01:00  INFO 6264 --- [microservice-scrap-consum] [http-nio-auto-1-exec-1] i.g.bonigarcia.wdm.WebDriverManager      : Exporting webdriver.chrome.driver as C:\Users\Andres\.cache\selenium\chromedriver\win64\134.0.6998.88\chromedriver.exe
+2025-03-17T11:18:51.724+01:00  WARN 6264 --- [microservice-scrap-consum] [http-nio-auto-1-exec-1] o.o.selenium.devtools.CdpVersionFinder   : Unable to find CDP implementation matching 134
+2025-03-17T11:18:51.724+01:00  WARN 6264 --- [microservice-scrap-consum] [http-nio-auto-1-exec-1] o.o.selenium.chromium.ChromiumDriver     : Unable to find version of CDP to use for 134.0.6998.89. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.25.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
+2025-03-17T11:19:06.203+01:00  INFO 6264 --- [microservice-scrap-consum] [http-nio-auto-1-exec-1] c.a.scrap.service.impl.ScrapServiceImpl  : ----------> TIEMPO TRANSCURRIDO: 15 SEGUNDOS.
+2025-03-17T11:19:06.203+01:00  INFO 6264 --- [microservice-scrap-consum] [http-nio-auto-1-exec-1] c.a.scrap.service.impl.ScrapServiceImpl  : ----------> FIN DE BUSCAR PRODUCTOS
+2025-03-17T11:22:17.761+01:00  INFO 6264 --- [microservice-scrap-consum] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-03-17T11:24:35.902+01:00  INFO 6264 --- [microservice-scrap-consum] [http-nio-auto-1-exec-3] c.a.scrap.controller.ScrapController     : ---------> BUSCANDO PRODUCTOS - REST CONTROLLER (microservice-scrap-consum)
+2025-03-17T11:24:35.918+01:00  INFO 6264 --- [microservice-scrap-consum] [http-nio-auto-1-exec-3] i.g.bonigarcia.wdm.WebDriverManager      : Using chromedriver 134.0.6998.88 (resolved driver for Chrome 134)
+2025-03-17T11:24:35.929+01:00  INFO 6264 --- [microservice-scrap-consum] [http-nio-auto-1-exec-3] i.g.bonigarcia.wdm.WebDriverManager      : Exporting webdriver.chrome.driver as C:\Users\Andres\.cache\selenium\chromedriver\win64\134.0.6998.88\chromedriver.exe
+2025-03-17T11:24:36.597+01:00  WARN 6264 --- [microservice-scrap-consum] [http-nio-auto-1-exec-3] o.o.selenium.devtools.CdpVersionFinder   : Unable to find CDP implementation matching 134
+2025-03-17T11:24:36.597+01:00  WARN 6264 --- [microservice-scrap-consum] [http-nio-auto-1-exec-3] o.o.selenium.chromium.ChromiumDriver     : Unable to find version of CDP to use for 134.0.6998.89. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.25.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
+2025-03-17T11:24:54.759+01:00  INFO 6264 --- [microservice-scrap-consum] [http-nio-auto-1-exec-3] c.a.scrap.service.impl.ScrapServiceImpl  : ----------> TIEMPO TRANSCURRIDO: 18 SEGUNDOS.
+2025-03-17T11:24:54.759+01:00  INFO 6264 --- [microservice-scrap-consum] [http-nio-auto-1-exec-3] c.a.scrap.service.impl.ScrapServiceImpl  : ----------> FIN DE BUSCAR PRODUCTOS
+2025-03-17T11:27:17.762+01:00  INFO 6264 --- [microservice-scrap-consum] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-03-17T11:29:36.061+01:00  INFO 6264 --- [microservice-scrap-consum] [http-nio-auto-1-exec-5] c.a.scrap.controller.ScrapController     : ---------> BUSCANDO PRODUCTOS - REST CONTROLLER (microservice-scrap-consum)
+2025-03-17T11:29:36.077+01:00  INFO 6264 --- [microservice-scrap-consum] [http-nio-auto-1-exec-5] i.g.bonigarcia.wdm.WebDriverManager      : Using chromedriver 134.0.6998.88 (resolved driver for Chrome 134)
+2025-03-17T11:29:36.086+01:00  INFO 6264 --- [microservice-scrap-consum] [http-nio-auto-1-exec-5] i.g.bonigarcia.wdm.WebDriverManager      : Exporting webdriver.chrome.driver as C:\Users\Andres\.cache\selenium\chromedriver\win64\134.0.6998.88\chromedriver.exe
+2025-03-17T11:29:36.825+01:00  WARN 6264 --- [microservice-scrap-consum] [http-nio-auto-1-exec-5] o.o.selenium.devtools.CdpVersionFinder   : Unable to find CDP implementation matching 134
+2025-03-17T11:29:36.825+01:00  WARN 6264 --- [microservice-scrap-consum] [http-nio-auto-1-exec-5] o.o.selenium.chromium.ChromiumDriver     : Unable to find version of CDP to use for 134.0.6998.89. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.25.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
+2025-03-17T11:29:56.260+01:00  INFO 6264 --- [microservice-scrap-consum] [http-nio-auto-1-exec-5] c.a.scrap.service.impl.ScrapServiceImpl  : ----------> TIEMPO TRANSCURRIDO: 20 SEGUNDOS.
+2025-03-17T11:29:56.260+01:00  INFO 6264 --- [microservice-scrap-consum] [http-nio-auto-1-exec-5] c.a.scrap.service.impl.ScrapServiceImpl  : ----------> FIN DE BUSCAR PRODUCTOS
+2025-03-17T11:32:17.775+01:00  INFO 6264 --- [microservice-scrap-consum] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-03-17T11:37:17.780+01:00  INFO 6264 --- [microservice-scrap-consum] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-03-17T11:38:08.504+01:00  INFO 6264 --- [microservice-scrap-consum] [http-nio-auto-1-exec-7] c.a.scrap.controller.ScrapController     : ---------> BUSCANDO PRODUCTOS - REST CONTROLLER (microservice-scrap-consum)
+2025-03-17T11:38:08.534+01:00  INFO 6264 --- [microservice-scrap-consum] [http-nio-auto-1-exec-7] i.g.bonigarcia.wdm.WebDriverManager      : Using chromedriver 134.0.6998.88 (resolved driver for Chrome 134)
+2025-03-17T11:38:08.543+01:00  INFO 6264 --- [microservice-scrap-consum] [http-nio-auto-1-exec-7] i.g.bonigarcia.wdm.WebDriverManager      : Exporting webdriver.chrome.driver as C:\Users\Andres\.cache\selenium\chromedriver\win64\134.0.6998.88\chromedriver.exe
+2025-03-17T11:38:09.213+01:00  WARN 6264 --- [microservice-scrap-consum] [http-nio-auto-1-exec-7] o.o.selenium.devtools.CdpVersionFinder   : Unable to find CDP implementation matching 134
+2025-03-17T11:38:09.213+01:00  WARN 6264 --- [microservice-scrap-consum] [http-nio-auto-1-exec-7] o.o.selenium.chromium.ChromiumDriver     : Unable to find version of CDP to use for 134.0.6998.89. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.25.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
+2025-03-17T11:38:20.029+01:00  INFO 6264 --- [microservice-scrap-consum] [http-nio-auto-1-exec-7] c.a.scrap.service.impl.ScrapServiceImpl  : ----------> TIEMPO TRANSCURRIDO: 11 SEGUNDOS.
+2025-03-17T11:38:20.029+01:00  INFO 6264 --- [microservice-scrap-consum] [http-nio-auto-1-exec-7] c.a.scrap.service.impl.ScrapServiceImpl  : ----------> FIN DE BUSCAR PRODUCTOS
+2025-03-17T11:40:26.427+01:00  INFO 6264 --- [microservice-scrap-consum] [http-nio-auto-1-exec-9] c.a.scrap.controller.ScrapController     : ---------> BUSCANDO PRODUCTOS - REST CONTROLLER (microservice-scrap-consum)
+2025-03-17T11:40:26.443+01:00  INFO 6264 --- [microservice-scrap-consum] [http-nio-auto-1-exec-9] i.g.bonigarcia.wdm.WebDriverManager      : Using chromedriver 134.0.6998.88 (resolved driver for Chrome 134)
+2025-03-17T11:40:26.453+01:00  INFO 6264 --- [microservice-scrap-consum] [http-nio-auto-1-exec-9] i.g.bonigarcia.wdm.WebDriverManager      : Exporting webdriver.chrome.driver as C:\Users\Andres\.cache\selenium\chromedriver\win64\134.0.6998.88\chromedriver.exe
+2025-03-17T11:40:27.151+01:00  WARN 6264 --- [microservice-scrap-consum] [http-nio-auto-1-exec-9] o.o.selenium.devtools.CdpVersionFinder   : Unable to find CDP implementation matching 134
+2025-03-17T11:40:27.151+01:00  WARN 6264 --- [microservice-scrap-consum] [http-nio-auto-1-exec-9] o.o.selenium.chromium.ChromiumDriver     : Unable to find version of CDP to use for 134.0.6998.89. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.25.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
+2025-03-17T11:40:36.869+01:00  INFO 6264 --- [microservice-scrap-consum] [http-nio-auto-1-exec-9] c.a.scrap.service.impl.ScrapServiceImpl  : ----------> TIEMPO TRANSCURRIDO: 10 SEGUNDOS.
+2025-03-17T11:40:36.869+01:00  INFO 6264 --- [microservice-scrap-consum] [http-nio-auto-1-exec-9] c.a.scrap.service.impl.ScrapServiceImpl  : ----------> FIN DE BUSCAR PRODUCTOS
+2025-03-17T11:41:01.836+01:00  INFO 6264 --- [microservice-scrap-consum] [http-nio-auto-1-exec-10] c.a.scrap.controller.ScrapController     : ---------> BUSCANDO PRODUCTOS - REST CONTROLLER (microservice-scrap-consum)
+2025-03-17T11:41:01.853+01:00  INFO 6264 --- [microservice-scrap-consum] [http-nio-auto-1-exec-10] i.g.bonigarcia.wdm.WebDriverManager      : Using chromedriver 134.0.6998.88 (resolved driver for Chrome 134)
+2025-03-17T11:41:01.871+01:00  INFO 6264 --- [microservice-scrap-consum] [http-nio-auto-1-exec-10] i.g.bonigarcia.wdm.WebDriverManager      : Exporting webdriver.chrome.driver as C:\Users\Andres\.cache\selenium\chromedriver\win64\134.0.6998.88\chromedriver.exe
+2025-03-17T11:41:02.515+01:00  WARN 6264 --- [microservice-scrap-consum] [http-nio-auto-1-exec-10] o.o.selenium.devtools.CdpVersionFinder   : Unable to find CDP implementation matching 134
+2025-03-17T11:41:02.515+01:00  WARN 6264 --- [microservice-scrap-consum] [http-nio-auto-1-exec-10] o.o.selenium.chromium.ChromiumDriver     : Unable to find version of CDP to use for 134.0.6998.89. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.25.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
+2025-03-17T11:41:18.140+01:00  INFO 6264 --- [microservice-scrap-consum] [http-nio-auto-1-exec-10] c.a.scrap.service.impl.ScrapServiceImpl  : ----------> TIEMPO TRANSCURRIDO: 16 SEGUNDOS.
+2025-03-17T11:41:18.141+01:00  INFO 6264 --- [microservice-scrap-consum] [http-nio-auto-1-exec-10] c.a.scrap.service.impl.ScrapServiceImpl  : ----------> FIN DE BUSCAR PRODUCTOS
+2025-03-17T11:41:45.741+01:00  INFO 6264 --- [microservice-scrap-consum] [http-nio-auto-1-exec-1] c.a.scrap.controller.ScrapController     : ---------> BUSCANDO PRODUCTOS - REST CONTROLLER (microservice-scrap-consum)
+2025-03-17T11:41:45.758+01:00  INFO 6264 --- [microservice-scrap-consum] [http-nio-auto-1-exec-1] i.g.bonigarcia.wdm.WebDriverManager      : Using chromedriver 134.0.6998.88 (resolved driver for Chrome 134)
+2025-03-17T11:41:45.768+01:00  INFO 6264 --- [microservice-scrap-consum] [http-nio-auto-1-exec-1] i.g.bonigarcia.wdm.WebDriverManager      : Exporting webdriver.chrome.driver as C:\Users\Andres\.cache\selenium\chromedriver\win64\134.0.6998.88\chromedriver.exe
+2025-03-17T11:41:46.427+01:00  WARN 6264 --- [microservice-scrap-consum] [http-nio-auto-1-exec-1] o.o.selenium.devtools.CdpVersionFinder   : Unable to find CDP implementation matching 134
+2025-03-17T11:41:46.428+01:00  WARN 6264 --- [microservice-scrap-consum] [http-nio-auto-1-exec-1] o.o.selenium.chromium.ChromiumDriver     : Unable to find version of CDP to use for 134.0.6998.89. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.25.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
+2025-03-17T11:42:00.815+01:00  INFO 6264 --- [microservice-scrap-consum] [http-nio-auto-1-exec-1] c.a.scrap.service.impl.ScrapServiceImpl  : ----------> TIEMPO TRANSCURRIDO: 15 SEGUNDOS.
+2025-03-17T11:42:00.815+01:00  INFO 6264 --- [microservice-scrap-consum] [http-nio-auto-1-exec-1] c.a.scrap.service.impl.ScrapServiceImpl  : ----------> FIN DE BUSCAR PRODUCTOS
+2025-03-17T11:42:16.877+01:00  INFO 6264 --- [microservice-scrap-consum] [http-nio-auto-1-exec-2] c.a.scrap.controller.ScrapController     : ---------> BUSCANDO PRODUCTOS - REST CONTROLLER (microservice-scrap-consum)
+2025-03-17T11:42:16.893+01:00  INFO 6264 --- [microservice-scrap-consum] [http-nio-auto-1-exec-2] i.g.bonigarcia.wdm.WebDriverManager      : Using chromedriver 134.0.6998.88 (resolved driver for Chrome 134)
+2025-03-17T11:42:16.903+01:00  INFO 6264 --- [microservice-scrap-consum] [http-nio-auto-1-exec-2] i.g.bonigarcia.wdm.WebDriverManager      : Exporting webdriver.chrome.driver as C:\Users\Andres\.cache\selenium\chromedriver\win64\134.0.6998.88\chromedriver.exe
+2025-03-17T11:42:17.576+01:00  WARN 6264 --- [microservice-scrap-consum] [http-nio-auto-1-exec-2] o.o.selenium.devtools.CdpVersionFinder   : Unable to find CDP implementation matching 134
+2025-03-17T11:42:17.576+01:00  WARN 6264 --- [microservice-scrap-consum] [http-nio-auto-1-exec-2] o.o.selenium.chromium.ChromiumDriver     : Unable to find version of CDP to use for 134.0.6998.89. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.25.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
+2025-03-17T11:42:17.788+01:00  INFO 6264 --- [microservice-scrap-consum] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-03-17T11:42:27.259+01:00  INFO 6264 --- [microservice-scrap-consum] [http-nio-auto-1-exec-2] c.a.scrap.service.impl.ScrapServiceImpl  : ----------> TIEMPO TRANSCURRIDO: 10 SEGUNDOS.
+2025-03-17T11:42:27.261+01:00  INFO 6264 --- [microservice-scrap-consum] [http-nio-auto-1-exec-2] c.a.scrap.service.impl.ScrapServiceImpl  : ----------> FIN DE BUSCAR PRODUCTOS
+2025-03-17T11:42:55.986+01:00  INFO 6264 --- [microservice-scrap-consum] [http-nio-auto-1-exec-3] c.a.scrap.controller.ScrapController     : ---------> BUSCANDO PRODUCTOS - REST CONTROLLER (microservice-scrap-consum)
+2025-03-17T11:42:56.001+01:00  INFO 6264 --- [microservice-scrap-consum] [http-nio-auto-1-exec-3] i.g.bonigarcia.wdm.WebDriverManager      : Using chromedriver 134.0.6998.88 (resolved driver for Chrome 134)
+2025-03-17T11:42:56.011+01:00  INFO 6264 --- [microservice-scrap-consum] [http-nio-auto-1-exec-3] i.g.bonigarcia.wdm.WebDriverManager      : Exporting webdriver.chrome.driver as C:\Users\Andres\.cache\selenium\chromedriver\win64\134.0.6998.88\chromedriver.exe
+2025-03-17T11:42:56.713+01:00  WARN 6264 --- [microservice-scrap-consum] [http-nio-auto-1-exec-3] o.o.selenium.devtools.CdpVersionFinder   : Unable to find CDP implementation matching 134
+2025-03-17T11:42:56.713+01:00  WARN 6264 --- [microservice-scrap-consum] [http-nio-auto-1-exec-3] o.o.selenium.chromium.ChromiumDriver     : Unable to find version of CDP to use for 134.0.6998.89. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.25.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
+2025-03-17T11:43:11.523+01:00  INFO 6264 --- [microservice-scrap-consum] [http-nio-auto-1-exec-3] c.a.scrap.service.impl.ScrapServiceImpl  : ----------> TIEMPO TRANSCURRIDO: 15 SEGUNDOS.
+2025-03-17T11:43:11.523+01:00  INFO 6264 --- [microservice-scrap-consum] [http-nio-auto-1-exec-3] c.a.scrap.service.impl.ScrapServiceImpl  : ----------> FIN DE BUSCAR PRODUCTOS
+2025-03-17T11:43:54.102+01:00  INFO 6264 --- [microservice-scrap-consum] [http-nio-auto-1-exec-4] c.a.scrap.controller.ScrapController     : ---------> BUSCANDO PRODUCTOS - REST CONTROLLER (microservice-scrap-consum)
+2025-03-17T11:43:54.117+01:00  INFO 6264 --- [microservice-scrap-consum] [http-nio-auto-1-exec-4] i.g.bonigarcia.wdm.WebDriverManager      : Using chromedriver 134.0.6998.88 (resolved driver for Chrome 134)
+2025-03-17T11:43:54.126+01:00  INFO 6264 --- [microservice-scrap-consum] [http-nio-auto-1-exec-4] i.g.bonigarcia.wdm.WebDriverManager      : Exporting webdriver.chrome.driver as C:\Users\Andres\.cache\selenium\chromedriver\win64\134.0.6998.88\chromedriver.exe
+2025-03-17T11:43:54.765+01:00  WARN 6264 --- [microservice-scrap-consum] [http-nio-auto-1-exec-4] o.o.selenium.devtools.CdpVersionFinder   : Unable to find CDP implementation matching 134
+2025-03-17T11:43:54.765+01:00  WARN 6264 --- [microservice-scrap-consum] [http-nio-auto-1-exec-4] o.o.selenium.chromium.ChromiumDriver     : Unable to find version of CDP to use for 134.0.6998.89. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.25.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
+2025-03-17T11:44:15.039+01:00  INFO 6264 --- [microservice-scrap-consum] [http-nio-auto-1-exec-4] c.a.scrap.service.impl.ScrapServiceImpl  : ----------> TIEMPO TRANSCURRIDO: 20 SEGUNDOS.
+2025-03-17T11:44:15.039+01:00  INFO 6264 --- [microservice-scrap-consum] [http-nio-auto-1-exec-4] c.a.scrap.service.impl.ScrapServiceImpl  : ----------> FIN DE BUSCAR PRODUCTOS
+2025-03-17T11:45:19.495+01:00  INFO 6264 --- [microservice-scrap-consum] [http-nio-auto-1-exec-6] c.a.scrap.controller.ScrapController     : ---------> BUSCANDO PRODUCTOS - REST CONTROLLER (microservice-scrap-consum)
+2025-03-17T11:45:19.512+01:00  INFO 6264 --- [microservice-scrap-consum] [http-nio-auto-1-exec-6] i.g.bonigarcia.wdm.WebDriverManager      : Using chromedriver 134.0.6998.88 (resolved driver for Chrome 134)
+2025-03-17T11:45:19.518+01:00  INFO 6264 --- [microservice-scrap-consum] [http-nio-auto-1-exec-6] i.g.bonigarcia.wdm.WebDriverManager      : Exporting webdriver.chrome.driver as C:\Users\Andres\.cache\selenium\chromedriver\win64\134.0.6998.88\chromedriver.exe
+2025-03-17T11:45:20.171+01:00  WARN 6264 --- [microservice-scrap-consum] [http-nio-auto-1-exec-6] o.o.selenium.devtools.CdpVersionFinder   : Unable to find CDP implementation matching 134
+2025-03-17T11:45:20.171+01:00  WARN 6264 --- [microservice-scrap-consum] [http-nio-auto-1-exec-6] o.o.selenium.chromium.ChromiumDriver     : Unable to find version of CDP to use for 134.0.6998.89. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.25.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
+2025-03-17T11:45:30.130+01:00  INFO 6264 --- [microservice-scrap-consum] [http-nio-auto-1-exec-6] c.a.scrap.service.impl.ScrapServiceImpl  : ----------> TIEMPO TRANSCURRIDO: 10 SEGUNDOS.
+2025-03-17T11:45:30.130+01:00  INFO 6264 --- [microservice-scrap-consum] [http-nio-auto-1-exec-6] c.a.scrap.service.impl.ScrapServiceImpl  : ----------> FIN DE BUSCAR PRODUCTOS
+2025-03-17T11:46:53.735+01:00  INFO 6264 --- [microservice-scrap-consum] [RMI TCP Connection(65)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2025-03-17T11:46:53.739+01:00  INFO 6264 --- [microservice-scrap-consum] [RMI TCP Connection(65)-127.0.0.1] o.s.c.n.e.s.EurekaServiceRegistry        : Unregistering application MICROSERVICE-SCRAP-CONSUM with eureka with status DOWN
+2025-03-17T11:46:53.739+01:00  INFO 6264 --- [microservice-scrap-consum] [RMI TCP Connection(65)-127.0.0.1] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1742208413739, current=DOWN, previous=UP]
+2025-03-17T11:46:53.739+01:00  INFO 6264 --- [microservice-scrap-consum] [DiscoveryClient-InstanceInfoReplicator-%d] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_MICROSERVICE-SCRAP-CONSUM/microservice-scrap-consum:ae4602f234e4fb542a3d6f28cc4a0e09: registering service...
+2025-03-17T11:46:53.747+01:00  INFO 6264 --- [microservice-scrap-consum] [RMI TCP Connection(65)-127.0.0.1] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-03-17T11:46:53.760+01:00  INFO 6264 --- [microservice-scrap-consum] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-03-17T11:46:53.769+01:00  INFO 6264 --- [microservice-scrap-consum] [RMI TCP Connection(65)-127.0.0.1] com.netflix.discovery.DiscoveryClient    : Shutting down DiscoveryClient ...
+2025-03-17T11:46:53.773+01:00  INFO 6264 --- [microservice-scrap-consum] [DiscoveryClient-InstanceInfoReplicator-%d] c.n.d.s.t.d.RedirectingEurekaHttpClient  : Request execution error. endpoint=DefaultEndpoint{ serviceUrl='http://localhost:8761/eureka/} exception=I/O error on POST request for "http://localhost:8761/eureka/apps/MICROSERVICE-SCRAP-CONSUM": Connect to http://localhost:8761 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: getsockopt stacktrace=org.springframework.web.client.ResourceAccessException: I/O error on POST request for "http://localhost:8761/eureka/apps/MICROSERVICE-SCRAP-CONSUM": Connect to http://localhost:8761 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: getsockopt
+	at org.springframework.web.client.RestTemplate.createResourceAccessException(RestTemplate.java:925)
+	at org.springframework.web.client.RestTemplate.doExecute(RestTemplate.java:905)
+	at org.springframework.web.client.RestTemplate.execute(RestTemplate.java:840)
+	at org.springframework.web.client.RestTemplate.exchange(RestTemplate.java:701)
+	at org.springframework.cloud.netflix.eureka.http.RestTemplateEurekaHttpClient.register(RestTemplateEurekaHttpClient.java:87)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$1.execute(EurekaHttpClientDecorator.java:59)
+	at com.netflix.discovery.shared.transport.decorator.RedirectingEurekaHttpClient.execute(RedirectingEurekaHttpClient.java:91)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.register(EurekaHttpClientDecorator.java:56)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$1.execute(EurekaHttpClientDecorator.java:59)
+	at com.netflix.discovery.shared.transport.decorator.RetryableEurekaHttpClient.execute(RetryableEurekaHttpClient.java:120)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.register(EurekaHttpClientDecorator.java:56)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$1.execute(EurekaHttpClientDecorator.java:59)
+	at com.netflix.discovery.shared.transport.decorator.SessionedEurekaHttpClient.execute(SessionedEurekaHttpClient.java:76)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.register(EurekaHttpClientDecorator.java:56)
+	at com.netflix.discovery.DiscoveryClient.register(DiscoveryClient.java:828)
+	at com.netflix.discovery.InstanceInfoReplicator.run(InstanceInfoReplicator.java:125)
+	at com.netflix.discovery.InstanceInfoReplicator$2.run(InstanceInfoReplicator.java:105)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:304)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+Caused by: org.apache.hc.client5.http.HttpHostConnectException: Connect to http://localhost:8761 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: getsockopt
+	at java.base/sun.nio.ch.Net.pollConnect(Native Method)
+	at java.base/sun.nio.ch.Net.pollConnectNow(Net.java:682)
+	at java.base/sun.nio.ch.NioSocketImpl.timedFinishConnect(NioSocketImpl.java:542)
+	at java.base/sun.nio.ch.NioSocketImpl.connect(NioSocketImpl.java:592)
+	at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:327)
+	at java.base/java.net.Socket.connect(Socket.java:751)
+	at org.apache.hc.client5.http.impl.io.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:216)
+	at org.apache.hc.client5.http.impl.io.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:490)
+	at org.apache.hc.client5.http.impl.classic.InternalExecRuntime.connectEndpoint(InternalExecRuntime.java:164)
+	at org.apache.hc.client5.http.impl.classic.InternalExecRuntime.connectEndpoint(InternalExecRuntime.java:174)
+	at org.apache.hc.client5.http.impl.classic.ConnectExec.execute(ConnectExec.java:144)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
+	at org.apache.hc.client5.http.impl.classic.ProtocolExec.execute(ProtocolExec.java:192)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
+	at org.apache.hc.client5.http.impl.classic.ContentCompressionExec.execute(ContentCompressionExec.java:150)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
+	at org.apache.hc.client5.http.impl.classic.HttpRequestRetryExec.execute(HttpRequestRetryExec.java:113)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
+	at org.apache.hc.client5.http.impl.classic.RedirectExec.execute(RedirectExec.java:110)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
+	at org.apache.hc.client5.http.impl.classic.InternalHttpClient.doExecute(InternalHttpClient.java:174)
+	at org.apache.hc.client5.http.impl.classic.CloseableHttpClient.execute(CloseableHttpClient.java:87)
+	at org.apache.hc.client5.http.impl.classic.CloseableHttpClient.execute(CloseableHttpClient.java:55)
+	at org.apache.hc.client5.http.classic.HttpClient.executeOpen(HttpClient.java:183)
+	at org.springframework.http.client.HttpComponentsClientHttpRequest.executeInternal(HttpComponentsClientHttpRequest.java:99)
+	at org.springframework.http.client.AbstractStreamingClientHttpRequest.executeInternal(AbstractStreamingClientHttpRequest.java:71)
+	at org.springframework.http.client.AbstractClientHttpRequest.execute(AbstractClientHttpRequest.java:81)
+	at org.springframework.http.client.InterceptingClientHttpRequest$InterceptingRequestExecution.execute(InterceptingClientHttpRequest.java:117)
+	at org.springframework.cloud.netflix.eureka.http.RestTemplateTransportClientFactory.lambda$restTemplate$3(RestTemplateTransportClientFactory.java:141)
+	at org.springframework.http.client.InterceptingClientHttpRequest$InterceptingRequestExecution.execute(InterceptingClientHttpRequest.java:88)
+	at org.springframework.http.client.InterceptingClientHttpRequest.executeInternal(InterceptingClientHttpRequest.java:72)
+	at org.springframework.http.client.AbstractBufferingClientHttpRequest.executeInternal(AbstractBufferingClientHttpRequest.java:48)
+	at org.springframework.http.client.AbstractClientHttpRequest.execute(AbstractClientHttpRequest.java:81)
+	at org.springframework.web.client.RestTemplate.doExecute(RestTemplate.java:899)
+	... 21 more
+
+2025-03-17T11:46:53.773+01:00  WARN 6264 --- [microservice-scrap-consum] [DiscoveryClient-InstanceInfoReplicator-%d] c.n.d.s.t.d.RetryableEurekaHttpClient    : Request execution failed with message: I/O error on POST request for "http://localhost:8761/eureka/apps/MICROSERVICE-SCRAP-CONSUM": Connect to http://localhost:8761 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: getsockopt
+2025-03-17T11:46:53.798+01:00  INFO 6264 --- [microservice-scrap-consum] [DiscoveryClient-InstanceInfoReplicator-%d] c.n.d.s.t.d.RedirectingEurekaHttpClient  : Request execution error. endpoint=DefaultEndpoint{ serviceUrl='http://localhost:8761/eureka/}, exception=I/O error on POST request for "http://localhost:8761/eureka/apps/MICROSERVICE-SCRAP-CONSUM": Connect to http://localhost:8761 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: getsockopt stacktrace=org.springframework.web.client.ResourceAccessException: I/O error on POST request for "http://localhost:8761/eureka/apps/MICROSERVICE-SCRAP-CONSUM": Connect to http://localhost:8761 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: getsockopt
+	at org.springframework.web.client.RestTemplate.createResourceAccessException(RestTemplate.java:925)
+	at org.springframework.web.client.RestTemplate.doExecute(RestTemplate.java:905)
+	at org.springframework.web.client.RestTemplate.execute(RestTemplate.java:840)
+	at org.springframework.web.client.RestTemplate.exchange(RestTemplate.java:701)
+	at org.springframework.cloud.netflix.eureka.http.RestTemplateEurekaHttpClient.register(RestTemplateEurekaHttpClient.java:87)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$1.execute(EurekaHttpClientDecorator.java:59)
+	at com.netflix.discovery.shared.transport.decorator.RedirectingEurekaHttpClient.executeOnNewServer(RedirectingEurekaHttpClient.java:121)
+	at com.netflix.discovery.shared.transport.decorator.RedirectingEurekaHttpClient.execute(RedirectingEurekaHttpClient.java:80)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.register(EurekaHttpClientDecorator.java:56)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$1.execute(EurekaHttpClientDecorator.java:59)
+	at com.netflix.discovery.shared.transport.decorator.RetryableEurekaHttpClient.execute(RetryableEurekaHttpClient.java:120)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.register(EurekaHttpClientDecorator.java:56)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$1.execute(EurekaHttpClientDecorator.java:59)
+	at com.netflix.discovery.shared.transport.decorator.SessionedEurekaHttpClient.execute(SessionedEurekaHttpClient.java:76)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.register(EurekaHttpClientDecorator.java:56)
+	at com.netflix.discovery.DiscoveryClient.register(DiscoveryClient.java:828)
+	at com.netflix.discovery.InstanceInfoReplicator.run(InstanceInfoReplicator.java:125)
+	at com.netflix.discovery.InstanceInfoReplicator$2.run(InstanceInfoReplicator.java:105)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:304)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+Caused by: org.apache.hc.client5.http.HttpHostConnectException: Connect to http://localhost:8761 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: getsockopt
+	at java.base/sun.nio.ch.Net.pollConnect(Native Method)
+	at java.base/sun.nio.ch.Net.pollConnectNow(Net.java:682)
+	at java.base/sun.nio.ch.NioSocketImpl.timedFinishConnect(NioSocketImpl.java:542)
+	at java.base/sun.nio.ch.NioSocketImpl.connect(NioSocketImpl.java:592)
+	at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:327)
+	at java.base/java.net.Socket.connect(Socket.java:751)
+	at org.apache.hc.client5.http.impl.io.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:216)
+	at org.apache.hc.client5.http.impl.io.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:490)
+	at org.apache.hc.client5.http.impl.classic.InternalExecRuntime.connectEndpoint(InternalExecRuntime.java:164)
+	at org.apache.hc.client5.http.impl.classic.InternalExecRuntime.connectEndpoint(InternalExecRuntime.java:174)
+	at org.apache.hc.client5.http.impl.classic.ConnectExec.execute(ConnectExec.java:144)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
+	at org.apache.hc.client5.http.impl.classic.ProtocolExec.execute(ProtocolExec.java:192)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
+	at org.apache.hc.client5.http.impl.classic.ContentCompressionExec.execute(ContentCompressionExec.java:150)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
+	at org.apache.hc.client5.http.impl.classic.HttpRequestRetryExec.execute(HttpRequestRetryExec.java:113)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
+	at org.apache.hc.client5.http.impl.classic.RedirectExec.execute(RedirectExec.java:110)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
+	at org.apache.hc.client5.http.impl.classic.InternalHttpClient.doExecute(InternalHttpClient.java:174)
+	at org.apache.hc.client5.http.impl.classic.CloseableHttpClient.execute(CloseableHttpClient.java:87)
+	at org.apache.hc.client5.http.impl.classic.CloseableHttpClient.execute(CloseableHttpClient.java:55)
+	at org.apache.hc.client5.http.classic.HttpClient.executeOpen(HttpClient.java:183)
+	at org.springframework.http.client.HttpComponentsClientHttpRequest.executeInternal(HttpComponentsClientHttpRequest.java:99)
+	at org.springframework.http.client.AbstractStreamingClientHttpRequest.executeInternal(AbstractStreamingClientHttpRequest.java:71)
+	at org.springframework.http.client.AbstractClientHttpRequest.execute(AbstractClientHttpRequest.java:81)
+	at org.springframework.http.client.InterceptingClientHttpRequest$InterceptingRequestExecution.execute(InterceptingClientHttpRequest.java:117)
+	at org.springframework.cloud.netflix.eureka.http.RestTemplateTransportClientFactory.lambda$restTemplate$3(RestTemplateTransportClientFactory.java:141)
+	at org.springframework.http.client.InterceptingClientHttpRequest$InterceptingRequestExecution.execute(InterceptingClientHttpRequest.java:88)
+	at org.springframework.http.client.InterceptingClientHttpRequest.executeInternal(InterceptingClientHttpRequest.java:72)
+	at org.springframework.http.client.AbstractBufferingClientHttpRequest.executeInternal(AbstractBufferingClientHttpRequest.java:48)
+	at org.springframework.http.client.AbstractClientHttpRequest.execute(AbstractClientHttpRequest.java:81)
+	at org.springframework.web.client.RestTemplate.doExecute(RestTemplate.java:899)
+	... 22 more
+
+2025-03-17T11:46:53.798+01:00  WARN 6264 --- [microservice-scrap-consum] [DiscoveryClient-InstanceInfoReplicator-%d] c.n.d.s.t.d.RetryableEurekaHttpClient    : Request execution failed with message: I/O error on POST request for "http://localhost:8761/eureka/apps/MICROSERVICE-SCRAP-CONSUM": Connect to http://localhost:8761 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: getsockopt
+2025-03-17T11:46:53.799+01:00  WARN 6264 --- [microservice-scrap-consum] [DiscoveryClient-InstanceInfoReplicator-%d] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_MICROSERVICE-SCRAP-CONSUM/microservice-scrap-consum:ae4602f234e4fb542a3d6f28cc4a0e09 - registration failed Cannot execute request on any known server
+
+com.netflix.discovery.shared.transport.TransportException: Cannot execute request on any known server
+	at com.netflix.discovery.shared.transport.decorator.RetryableEurekaHttpClient.execute(RetryableEurekaHttpClient.java:112) ~[eureka-client-2.0.4.jar:2.0.4]
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.register(EurekaHttpClientDecorator.java:56) ~[eureka-client-2.0.4.jar:2.0.4]
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$1.execute(EurekaHttpClientDecorator.java:59) ~[eureka-client-2.0.4.jar:2.0.4]
+	at com.netflix.discovery.shared.transport.decorator.SessionedEurekaHttpClient.execute(SessionedEurekaHttpClient.java:76) ~[eureka-client-2.0.4.jar:2.0.4]
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.register(EurekaHttpClientDecorator.java:56) ~[eureka-client-2.0.4.jar:2.0.4]
+	at com.netflix.discovery.DiscoveryClient.register(DiscoveryClient.java:828) ~[eureka-client-2.0.4.jar:2.0.4]
+	at com.netflix.discovery.InstanceInfoReplicator.run(InstanceInfoReplicator.java:125) ~[eureka-client-2.0.4.jar:2.0.4]
+	at com.netflix.discovery.InstanceInfoReplicator$2.run(InstanceInfoReplicator.java:105) ~[eureka-client-2.0.4.jar:2.0.4]
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572) ~[na:na]
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317) ~[na:na]
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:304) ~[na:na]
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144) ~[na:na]
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642) ~[na:na]
+	at java.base/java.lang.Thread.run(Thread.java:1583) ~[na:na]
+
+2025-03-17T11:46:53.810+01:00  WARN 6264 --- [microservice-scrap-consum] [DiscoveryClient-InstanceInfoReplicator-%d] c.n.discovery.InstanceInfoReplicator     : There was a problem with the instance info replicator
+
+com.netflix.discovery.shared.transport.TransportException: Cannot execute request on any known server
+	at com.netflix.discovery.shared.transport.decorator.RetryableEurekaHttpClient.execute(RetryableEurekaHttpClient.java:112) ~[eureka-client-2.0.4.jar:2.0.4]
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.register(EurekaHttpClientDecorator.java:56) ~[eureka-client-2.0.4.jar:2.0.4]
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$1.execute(EurekaHttpClientDecorator.java:59) ~[eureka-client-2.0.4.jar:2.0.4]
+	at com.netflix.discovery.shared.transport.decorator.SessionedEurekaHttpClient.execute(SessionedEurekaHttpClient.java:76) ~[eureka-client-2.0.4.jar:2.0.4]
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.register(EurekaHttpClientDecorator.java:56) ~[eureka-client-2.0.4.jar:2.0.4]
+	at com.netflix.discovery.DiscoveryClient.register(DiscoveryClient.java:828) ~[eureka-client-2.0.4.jar:2.0.4]
+	at com.netflix.discovery.InstanceInfoReplicator.run(InstanceInfoReplicator.java:125) ~[eureka-client-2.0.4.jar:2.0.4]
+	at com.netflix.discovery.InstanceInfoReplicator$2.run(InstanceInfoReplicator.java:105) ~[eureka-client-2.0.4.jar:2.0.4]
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572) ~[na:na]
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317) ~[na:na]
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:304) ~[na:na]
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144) ~[na:na]
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642) ~[na:na]
+	at java.base/java.lang.Thread.run(Thread.java:1583) ~[na:na]
+
+2025-03-17T11:46:53.814+01:00  INFO 6264 --- [microservice-scrap-consum] [RMI TCP Connection(65)-127.0.0.1] com.netflix.discovery.DiscoveryClient    : Unregistering ...
+2025-03-17T11:46:53.822+01:00  INFO 6264 --- [microservice-scrap-consum] [RMI TCP Connection(65)-127.0.0.1] c.n.d.s.t.d.RedirectingEurekaHttpClient  : Request execution error. endpoint=DefaultEndpoint{ serviceUrl='http://localhost:8761/eureka/}, exception=I/O error on DELETE request for "http://localhost:8761/eureka/apps/MICROSERVICE-SCRAP-CONSUM/microservice-scrap-consum:ae4602f234e4fb542a3d6f28cc4a0e09": Connect to http://localhost:8761 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: getsockopt stacktrace=org.springframework.web.client.ResourceAccessException: I/O error on DELETE request for "http://localhost:8761/eureka/apps/MICROSERVICE-SCRAP-CONSUM/microservice-scrap-consum:ae4602f234e4fb542a3d6f28cc4a0e09": Connect to http://localhost:8761 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: getsockopt
+	at org.springframework.web.client.RestTemplate.createResourceAccessException(RestTemplate.java:925)
+	at org.springframework.web.client.RestTemplate.doExecute(RestTemplate.java:905)
+	at org.springframework.web.client.RestTemplate.execute(RestTemplate.java:840)
+	at org.springframework.web.client.RestTemplate.exchange(RestTemplate.java:701)
+	at org.springframework.cloud.netflix.eureka.http.RestTemplateEurekaHttpClient.cancel(RestTemplateEurekaHttpClient.java:100)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$2.execute(EurekaHttpClientDecorator.java:74)
+	at com.netflix.discovery.shared.transport.decorator.RedirectingEurekaHttpClient.executeOnNewServer(RedirectingEurekaHttpClient.java:121)
+	at com.netflix.discovery.shared.transport.decorator.RedirectingEurekaHttpClient.execute(RedirectingEurekaHttpClient.java:80)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.cancel(EurekaHttpClientDecorator.java:71)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$2.execute(EurekaHttpClientDecorator.java:74)
+	at com.netflix.discovery.shared.transport.decorator.RetryableEurekaHttpClient.execute(RetryableEurekaHttpClient.java:120)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.cancel(EurekaHttpClientDecorator.java:71)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$2.execute(EurekaHttpClientDecorator.java:74)
+	at com.netflix.discovery.shared.transport.decorator.SessionedEurekaHttpClient.execute(SessionedEurekaHttpClient.java:76)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.cancel(EurekaHttpClientDecorator.java:71)
+	at com.netflix.discovery.DiscoveryClient.unregister(DiscoveryClient.java:919)
+	at com.netflix.discovery.DiscoveryClient.shutdown(DiscoveryClient.java:900)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor$LifecycleMethod.invoke(InitDestroyAnnotationBeanPostProcessor.java:457)
+	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor$LifecycleMetadata.invokeDestroyMethods(InitDestroyAnnotationBeanPostProcessor.java:415)
+	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor.postProcessBeforeDestruction(InitDestroyAnnotationBeanPostProcessor.java:239)
+	at org.springframework.beans.factory.support.DisposableBeanAdapter.destroy(DisposableBeanAdapter.java:202)
+	at org.springframework.beans.factory.support.DisposableBeanAdapter.run(DisposableBeanAdapter.java:195)
+	at org.springframework.cloud.context.scope.GenericScope$BeanLifecycleWrapper.destroy(GenericScope.java:389)
+	at org.springframework.cloud.context.scope.GenericScope.destroy(GenericScope.java:136)
+	at org.springframework.beans.factory.support.DisposableBeanAdapter.destroy(DisposableBeanAdapter.java:211)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.destroyBean(DefaultSingletonBeanRegistry.java:735)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.destroySingleton(DefaultSingletonBeanRegistry.java:692)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.destroySingleton(DefaultListableBeanFactory.java:1401)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.destroySingletons(DefaultSingletonBeanRegistry.java:651)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.destroySingletons(DefaultListableBeanFactory.java:1394)
+	at org.springframework.context.support.AbstractApplicationContext.destroyBeans(AbstractApplicationContext.java:1219)
+	at org.springframework.context.support.AbstractApplicationContext.doClose(AbstractApplicationContext.java:1180)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.doClose(ServletWebServerApplicationContext.java:179)
+	at org.springframework.context.support.AbstractApplicationContext.close(AbstractApplicationContext.java:1126)
+	at org.springframework.boot.admin.SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin.shutdown(SpringApplicationAdminMXBeanRegistrar.java:160)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at sun.reflect.misc.Trampoline.invoke(MethodUtil.java:64)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at java.base/sun.reflect.misc.MethodUtil.invoke(MethodUtil.java:97)
+	at java.management/com.sun.jmx.mbeanserver.ConvertingMethod.invokeWithOpenReturn(ConvertingMethod.java:193)
+	at java.management/com.sun.jmx.mbeanserver.ConvertingMethod.invokeWithOpenReturn(ConvertingMethod.java:175)
+	at java.management/com.sun.jmx.mbeanserver.MXBeanIntrospector.invokeM2(MXBeanIntrospector.java:115)
+	at java.management/com.sun.jmx.mbeanserver.MXBeanIntrospector.invokeM2(MXBeanIntrospector.java:52)
+	at java.management/com.sun.jmx.mbeanserver.MBeanIntrospector.invokeM(MBeanIntrospector.java:236)
+	at java.management/com.sun.jmx.mbeanserver.PerInterface.invoke(PerInterface.java:138)
+	at java.management/com.sun.jmx.mbeanserver.MBeanSupport.invoke(MBeanSupport.java:252)
+	at java.management/com.sun.jmx.interceptor.DefaultMBeanServerInterceptor.invoke(DefaultMBeanServerInterceptor.java:803)
+	at java.management/com.sun.jmx.mbeanserver.JmxMBeanServer.invoke(JmxMBeanServer.java:802)
+	at java.management.rmi/javax.management.remote.rmi.RMIConnectionImpl.doOperation(RMIConnectionImpl.java:1472)
+	at java.management.rmi/javax.management.remote.rmi.RMIConnectionImpl$PrivilegedOperation.run(RMIConnectionImpl.java:1310)
+	at java.management.rmi/javax.management.remote.rmi.RMIConnectionImpl.doPrivilegedOperation(RMIConnectionImpl.java:1405)
+	at java.management.rmi/javax.management.remote.rmi.RMIConnectionImpl.invoke(RMIConnectionImpl.java:829)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at java.rmi/sun.rmi.server.UnicastServerRef.dispatch(UnicastServerRef.java:360)
+	at java.rmi/sun.rmi.transport.Transport$1.run(Transport.java:200)
+	at java.rmi/sun.rmi.transport.Transport$1.run(Transport.java:197)
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:714)
+	at java.rmi/sun.rmi.transport.Transport.serviceCall(Transport.java:196)
+	at java.rmi/sun.rmi.transport.tcp.TCPTransport.handleMessages(TCPTransport.java:598)
+	at java.rmi/sun.rmi.transport.tcp.TCPTransport$ConnectionHandler.run0(TCPTransport.java:844)
+	at java.rmi/sun.rmi.transport.tcp.TCPTransport$ConnectionHandler.lambda$run$0(TCPTransport.java:721)
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:400)
+	at java.rmi/sun.rmi.transport.tcp.TCPTransport$ConnectionHandler.run(TCPTransport.java:720)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+Caused by: org.apache.hc.client5.http.HttpHostConnectException: Connect to http://localhost:8761 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: getsockopt
+	at java.base/sun.nio.ch.Net.pollConnect(Native Method)
+	at java.base/sun.nio.ch.Net.pollConnectNow(Net.java:682)
+	at java.base/sun.nio.ch.NioSocketImpl.timedFinishConnect(NioSocketImpl.java:542)
+	at java.base/sun.nio.ch.NioSocketImpl.connect(NioSocketImpl.java:592)
+	at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:327)
+	at java.base/java.net.Socket.connect(Socket.java:751)
+	at org.apache.hc.client5.http.impl.io.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:216)
+	at org.apache.hc.client5.http.impl.io.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:490)
+	at org.apache.hc.client5.http.impl.classic.InternalExecRuntime.connectEndpoint(InternalExecRuntime.java:164)
+	at org.apache.hc.client5.http.impl.classic.InternalExecRuntime.connectEndpoint(InternalExecRuntime.java:174)
+	at org.apache.hc.client5.http.impl.classic.ConnectExec.execute(ConnectExec.java:144)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
+	at org.apache.hc.client5.http.impl.classic.ProtocolExec.execute(ProtocolExec.java:192)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
+	at org.apache.hc.client5.http.impl.classic.ContentCompressionExec.execute(ContentCompressionExec.java:150)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
+	at org.apache.hc.client5.http.impl.classic.HttpRequestRetryExec.execute(HttpRequestRetryExec.java:113)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
+	at org.apache.hc.client5.http.impl.classic.RedirectExec.execute(RedirectExec.java:110)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
+	at org.apache.hc.client5.http.impl.classic.InternalHttpClient.doExecute(InternalHttpClient.java:174)
+	at org.apache.hc.client5.http.impl.classic.CloseableHttpClient.execute(CloseableHttpClient.java:87)
+	at org.apache.hc.client5.http.impl.classic.CloseableHttpClient.execute(CloseableHttpClient.java:55)
+	at org.apache.hc.client5.http.classic.HttpClient.executeOpen(HttpClient.java:183)
+	at org.springframework.http.client.HttpComponentsClientHttpRequest.executeInternal(HttpComponentsClientHttpRequest.java:99)
+	at org.springframework.http.client.AbstractStreamingClientHttpRequest.executeInternal(AbstractStreamingClientHttpRequest.java:71)
+	at org.springframework.http.client.AbstractClientHttpRequest.execute(AbstractClientHttpRequest.java:81)
+	at org.springframework.http.client.InterceptingClientHttpRequest$InterceptingRequestExecution.execute(InterceptingClientHttpRequest.java:117)
+	at org.springframework.cloud.netflix.eureka.http.RestTemplateTransportClientFactory.lambda$restTemplate$3(RestTemplateTransportClientFactory.java:141)
+	at org.springframework.http.client.InterceptingClientHttpRequest$InterceptingRequestExecution.execute(InterceptingClientHttpRequest.java:88)
+	at org.springframework.http.client.InterceptingClientHttpRequest.executeInternal(InterceptingClientHttpRequest.java:72)
+	at org.springframework.http.client.AbstractBufferingClientHttpRequest.executeInternal(AbstractBufferingClientHttpRequest.java:48)
+	at org.springframework.http.client.AbstractClientHttpRequest.execute(AbstractClientHttpRequest.java:81)
+	at org.springframework.web.client.RestTemplate.doExecute(RestTemplate.java:899)
+	... 69 more
+
+2025-03-17T11:46:53.823+01:00  WARN 6264 --- [microservice-scrap-consum] [RMI TCP Connection(65)-127.0.0.1] c.n.d.s.t.d.RetryableEurekaHttpClient    : Request execution failed with message: I/O error on DELETE request for "http://localhost:8761/eureka/apps/MICROSERVICE-SCRAP-CONSUM/microservice-scrap-consum:ae4602f234e4fb542a3d6f28cc4a0e09": Connect to http://localhost:8761 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: getsockopt
+2025-03-17T11:46:53.823+01:00 ERROR 6264 --- [microservice-scrap-consum] [RMI TCP Connection(65)-127.0.0.1] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_MICROSERVICE-SCRAP-CONSUM/microservice-scrap-consum:ae4602f234e4fb542a3d6f28cc4a0e09 - de-registration failedCannot execute request on any known server
+
+com.netflix.discovery.shared.transport.TransportException: Cannot execute request on any known server
+	at com.netflix.discovery.shared.transport.decorator.RetryableEurekaHttpClient.execute(RetryableEurekaHttpClient.java:112) ~[eureka-client-2.0.4.jar:2.0.4]
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.cancel(EurekaHttpClientDecorator.java:71) ~[eureka-client-2.0.4.jar:2.0.4]
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$2.execute(EurekaHttpClientDecorator.java:74) ~[eureka-client-2.0.4.jar:2.0.4]
+	at com.netflix.discovery.shared.transport.decorator.SessionedEurekaHttpClient.execute(SessionedEurekaHttpClient.java:76) ~[eureka-client-2.0.4.jar:2.0.4]
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.cancel(EurekaHttpClientDecorator.java:71) ~[eureka-client-2.0.4.jar:2.0.4]
+	at com.netflix.discovery.DiscoveryClient.unregister(DiscoveryClient.java:919) ~[eureka-client-2.0.4.jar:2.0.4]
+	at com.netflix.discovery.DiscoveryClient.shutdown(DiscoveryClient.java:900) ~[eureka-client-2.0.4.jar:2.0.4]
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580) ~[na:na]
+	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor$LifecycleMethod.invoke(InitDestroyAnnotationBeanPostProcessor.java:457) ~[spring-beans-6.2.3.jar:6.2.3]
+	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor$LifecycleMetadata.invokeDestroyMethods(InitDestroyAnnotationBeanPostProcessor.java:415) ~[spring-beans-6.2.3.jar:6.2.3]
+	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor.postProcessBeforeDestruction(InitDestroyAnnotationBeanPostProcessor.java:239) ~[spring-beans-6.2.3.jar:6.2.3]
+	at org.springframework.beans.factory.support.DisposableBeanAdapter.destroy(DisposableBeanAdapter.java:202) ~[spring-beans-6.2.3.jar:6.2.3]
+	at org.springframework.beans.factory.support.DisposableBeanAdapter.run(DisposableBeanAdapter.java:195) ~[spring-beans-6.2.3.jar:6.2.3]
+	at org.springframework.cloud.context.scope.GenericScope$BeanLifecycleWrapper.destroy(GenericScope.java:389) ~[spring-cloud-context-4.2.0.jar:4.2.0]
+	at org.springframework.cloud.context.scope.GenericScope.destroy(GenericScope.java:136) ~[spring-cloud-context-4.2.0.jar:4.2.0]
+	at org.springframework.beans.factory.support.DisposableBeanAdapter.destroy(DisposableBeanAdapter.java:211) ~[spring-beans-6.2.3.jar:6.2.3]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.destroyBean(DefaultSingletonBeanRegistry.java:735) ~[spring-beans-6.2.3.jar:6.2.3]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.destroySingleton(DefaultSingletonBeanRegistry.java:692) ~[spring-beans-6.2.3.jar:6.2.3]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.destroySingleton(DefaultListableBeanFactory.java:1401) ~[spring-beans-6.2.3.jar:6.2.3]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.destroySingletons(DefaultSingletonBeanRegistry.java:651) ~[spring-beans-6.2.3.jar:6.2.3]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.destroySingletons(DefaultListableBeanFactory.java:1394) ~[spring-beans-6.2.3.jar:6.2.3]
+	at org.springframework.context.support.AbstractApplicationContext.destroyBeans(AbstractApplicationContext.java:1219) ~[spring-context-6.2.3.jar:6.2.3]
+	at org.springframework.context.support.AbstractApplicationContext.doClose(AbstractApplicationContext.java:1180) ~[spring-context-6.2.3.jar:6.2.3]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.doClose(ServletWebServerApplicationContext.java:179) ~[spring-boot-3.4.3.jar:3.4.3]
+	at org.springframework.context.support.AbstractApplicationContext.close(AbstractApplicationContext.java:1126) ~[spring-context-6.2.3.jar:6.2.3]
+	at org.springframework.boot.admin.SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin.shutdown(SpringApplicationAdminMXBeanRegistrar.java:160) ~[spring-boot-3.4.3.jar:3.4.3]
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580) ~[na:na]
+	at sun.reflect.misc.Trampoline.invoke(MethodUtil.java:64) ~[na:na]
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580) ~[na:na]
+	at java.base/sun.reflect.misc.MethodUtil.invoke(MethodUtil.java:97) ~[na:na]
+	at java.management/com.sun.jmx.mbeanserver.ConvertingMethod.invokeWithOpenReturn(ConvertingMethod.java:193) ~[na:na]
+	at java.management/com.sun.jmx.mbeanserver.ConvertingMethod.invokeWithOpenReturn(ConvertingMethod.java:175) ~[na:na]
+	at java.management/com.sun.jmx.mbeanserver.MXBeanIntrospector.invokeM2(MXBeanIntrospector.java:115) ~[na:na]
+	at java.management/com.sun.jmx.mbeanserver.MXBeanIntrospector.invokeM2(MXBeanIntrospector.java:52) ~[na:na]
+	at java.management/com.sun.jmx.mbeanserver.MBeanIntrospector.invokeM(MBeanIntrospector.java:236) ~[na:na]
+	at java.management/com.sun.jmx.mbeanserver.PerInterface.invoke(PerInterface.java:138) ~[na:na]
+	at java.management/com.sun.jmx.mbeanserver.MBeanSupport.invoke(MBeanSupport.java:252) ~[na:na]
+	at java.management/com.sun.jmx.interceptor.DefaultMBeanServerInterceptor.invoke(DefaultMBeanServerInterceptor.java:803) ~[na:na]
+	at java.management/com.sun.jmx.mbeanserver.JmxMBeanServer.invoke(JmxMBeanServer.java:802) ~[na:na]
+	at java.management.rmi/javax.management.remote.rmi.RMIConnectionImpl.doOperation(RMIConnectionImpl.java:1472) ~[na:na]
+	at java.management.rmi/javax.management.remote.rmi.RMIConnectionImpl$PrivilegedOperation.run(RMIConnectionImpl.java:1310) ~[na:na]
+	at java.management.rmi/javax.management.remote.rmi.RMIConnectionImpl.doPrivilegedOperation(RMIConnectionImpl.java:1405) ~[na:na]
+	at java.management.rmi/javax.management.remote.rmi.RMIConnectionImpl.invoke(RMIConnectionImpl.java:829) ~[na:na]
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580) ~[na:na]
+	at java.rmi/sun.rmi.server.UnicastServerRef.dispatch(UnicastServerRef.java:360) ~[na:na]
+	at java.rmi/sun.rmi.transport.Transport$1.run(Transport.java:200) ~[na:na]
+	at java.rmi/sun.rmi.transport.Transport$1.run(Transport.java:197) ~[na:na]
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:714) ~[na:na]
+	at java.rmi/sun.rmi.transport.Transport.serviceCall(Transport.java:196) ~[na:na]
+	at java.rmi/sun.rmi.transport.tcp.TCPTransport.handleMessages(TCPTransport.java:598) ~[na:na]
+	at java.rmi/sun.rmi.transport.tcp.TCPTransport$ConnectionHandler.run0(TCPTransport.java:844) ~[na:na]
+	at java.rmi/sun.rmi.transport.tcp.TCPTransport$ConnectionHandler.lambda$run$0(TCPTransport.java:721) ~[na:na]
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:400) ~[na:na]
+	at java.rmi/sun.rmi.transport.tcp.TCPTransport$ConnectionHandler.run(TCPTransport.java:720) ~[na:na]
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144) ~[na:na]
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642) ~[na:na]
+	at java.base/java.lang.Thread.run(Thread.java:1583) ~[na:na]
+
+2025-03-17T11:46:53.824+01:00  INFO 6264 --- [microservice-scrap-consum] [RMI TCP Connection(65)-127.0.0.1] com.netflix.discovery.DiscoveryClient    : Completed shut down of DiscoveryClient
+2025-03-17T13:26:17.139+01:00  INFO 16888 --- [microservice-scrap-consum] [restartedMain] c.a.s.MicroserviceScrapConsumApplication : Starting MicroserviceScrapConsumApplication using Java 21.0.4 with PID 16888 (C:\Users\Andres\Documents\Programacion 2025\Proyectos\Compra barato-back\microservice-scrap-consum\target\classes started by Andres in C:\Users\Andres\Documents\Programacion 2025\Proyectos\Compra barato-back\microservice-scrap-consum)
+2025-03-17T13:26:17.140+01:00  INFO 16888 --- [microservice-scrap-consum] [restartedMain] c.a.s.MicroserviceScrapConsumApplication : No active profile set, falling back to 1 default profile: "default"
+2025-03-17T13:26:17.187+01:00  INFO 16888 --- [microservice-scrap-consum] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-03-17T13:26:17.187+01:00  INFO 16888 --- [microservice-scrap-consum] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-03-17T13:26:17.780+01:00  INFO 16888 --- [microservice-scrap-consum] [restartedMain] o.s.cloud.context.scope.GenericScope     : BeanFactory id=de10869b-9718-3907-a387-9f7d53abf9fa
+2025-03-17T13:26:18.072+01:00  INFO 16888 --- [microservice-scrap-consum] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 0 (http)
+2025-03-17T13:26:18.083+01:00  INFO 16888 --- [microservice-scrap-consum] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-03-17T13:26:18.083+01:00  INFO 16888 --- [microservice-scrap-consum] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.36]
+2025-03-17T13:26:18.128+01:00  INFO 16888 --- [microservice-scrap-consum] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-03-17T13:26:18.128+01:00  INFO 16888 --- [microservice-scrap-consum] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 941 ms
+2025-03-17T13:26:18.535+01:00  WARN 16888 --- [microservice-scrap-consum] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : Unable to start LiveReload server
+2025-03-17T13:26:18.583+01:00  INFO 16888 --- [microservice-scrap-consum] [restartedMain] DiscoveryClientOptionalArgsConfiguration : Eureka HTTP Client uses RestTemplate.
+2025-03-17T13:26:18.675+01:00  INFO 16888 --- [microservice-scrap-consum] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 55132 (http) with context path '/'
+2025-03-17T13:26:18.677+01:00  INFO 16888 --- [microservice-scrap-consum] [restartedMain] .s.c.n.e.s.EurekaAutoServiceRegistration : Updating port to 55132
+2025-03-17T13:26:18.681+01:00  INFO 16888 --- [microservice-scrap-consum] [restartedMain] o.s.c.n.eureka.InstanceInfoFactory       : Setting initial instance status as: STARTING
+2025-03-17T13:26:18.701+01:00  INFO 16888 --- [microservice-scrap-consum] [restartedMain] com.netflix.discovery.DiscoveryClient    : Initializing Eureka in region us-east-1
+2025-03-17T13:26:18.707+01:00  INFO 16888 --- [microservice-scrap-consum] [restartedMain] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-03-17T13:26:18.716+01:00  INFO 16888 --- [microservice-scrap-consum] [restartedMain] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+2025-03-17T13:26:18.717+01:00  INFO 16888 --- [microservice-scrap-consum] [restartedMain] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+2025-03-17T13:26:18.717+01:00  INFO 16888 --- [microservice-scrap-consum] [restartedMain] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+2025-03-17T13:26:18.717+01:00  INFO 16888 --- [microservice-scrap-consum] [restartedMain] com.netflix.discovery.DiscoveryClient    : Application is null : false
+2025-03-17T13:26:18.718+01:00  INFO 16888 --- [microservice-scrap-consum] [restartedMain] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+2025-03-17T13:26:18.718+01:00  INFO 16888 --- [microservice-scrap-consum] [restartedMain] com.netflix.discovery.DiscoveryClient    : Application version is -1: true
+2025-03-17T13:26:18.718+01:00  INFO 16888 --- [microservice-scrap-consum] [restartedMain] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+2025-03-17T13:26:18.997+01:00  INFO 16888 --- [microservice-scrap-consum] [restartedMain] com.netflix.discovery.DiscoveryClient    : The response status is 200
+2025-03-17T13:26:19.000+01:00  INFO 16888 --- [microservice-scrap-consum] [restartedMain] com.netflix.discovery.DiscoveryClient    : Starting heartbeat executor: renew interval is: 30
+2025-03-17T13:26:19.003+01:00  INFO 16888 --- [microservice-scrap-consum] [restartedMain] c.n.discovery.InstanceInfoReplicator     : InstanceInfoReplicator onDemand update allowed rate per min is 4
+2025-03-17T13:26:19.005+01:00  INFO 16888 --- [microservice-scrap-consum] [restartedMain] com.netflix.discovery.DiscoveryClient    : Discovery Client initialized at timestamp 1742214379004 with initial instances count: 1
+2025-03-17T13:26:19.009+01:00  INFO 16888 --- [microservice-scrap-consum] [restartedMain] o.s.c.n.e.s.EurekaServiceRegistry        : Registering application MICROSERVICE-SCRAP-CONSUM with eureka with status UP
+2025-03-17T13:26:19.009+01:00  INFO 16888 --- [microservice-scrap-consum] [restartedMain] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1742214379009, current=UP, previous=STARTING]
+2025-03-17T13:26:19.011+01:00  INFO 16888 --- [microservice-scrap-consum] [DiscoveryClient-InstanceInfoReplicator-%d] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_MICROSERVICE-SCRAP-CONSUM/microservice-scrap-consum:aca79ec1dab9b2f3ed8288901760aa60: registering service...
+2025-03-17T13:26:19.023+01:00  INFO 16888 --- [microservice-scrap-consum] [restartedMain] c.a.s.MicroserviceScrapConsumApplication : Started MicroserviceScrapConsumApplication in 2.212 seconds (process running for 2.91)
+2025-03-17T13:26:19.049+01:00  INFO 16888 --- [microservice-scrap-consum] [DiscoveryClient-InstanceInfoReplicator-%d] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_MICROSERVICE-SCRAP-CONSUM/microservice-scrap-consum:aca79ec1dab9b2f3ed8288901760aa60 - registration status: 204
+2025-03-17T13:27:18.495+01:00  INFO 16888 --- [microservice-scrap-consum] [http-nio-auto-1-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-03-17T13:27:18.495+01:00  INFO 16888 --- [microservice-scrap-consum] [http-nio-auto-1-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-03-17T13:27:18.496+01:00  INFO 16888 --- [microservice-scrap-consum] [http-nio-auto-1-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 0 ms
+2025-03-17T13:27:18.526+01:00  INFO 16888 --- [microservice-scrap-consum] [http-nio-auto-1-exec-1] c.a.scrap.controller.ScrapController     : ---------> BUSCANDO PRODUCTOS - REST CONTROLLER (microservice-scrap-consum)
+2025-03-17T13:27:18.940+01:00  INFO 16888 --- [microservice-scrap-consum] [http-nio-auto-1-exec-1] i.g.bonigarcia.wdm.WebDriverManager      : Using chromedriver 134.0.6998.88 (resolved driver for Chrome 134)
+2025-03-17T13:27:18.954+01:00  INFO 16888 --- [microservice-scrap-consum] [http-nio-auto-1-exec-1] i.g.bonigarcia.wdm.WebDriverManager      : Exporting webdriver.chrome.driver as C:\Users\Andres\.cache\selenium\chromedriver\win64\134.0.6998.88\chromedriver.exe
+2025-03-17T13:27:19.923+01:00  WARN 16888 --- [microservice-scrap-consum] [http-nio-auto-1-exec-1] o.o.selenium.devtools.CdpVersionFinder   : Unable to find CDP implementation matching 134
+2025-03-17T13:27:19.924+01:00  WARN 16888 --- [microservice-scrap-consum] [http-nio-auto-1-exec-1] o.o.selenium.chromium.ChromiumDriver     : Unable to find version of CDP to use for 134.0.6998.89. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.25.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
+2025-03-17T13:27:32.144+01:00  INFO 16888 --- [microservice-scrap-consum] [http-nio-auto-1-exec-1] c.a.scrap.service.impl.ScrapServiceImpl  : ----------> TIEMPO TRANSCURRIDO: 13 SEGUNDOS.
+2025-03-17T13:27:32.145+01:00  INFO 16888 --- [microservice-scrap-consum] [http-nio-auto-1-exec-1] c.a.scrap.service.impl.ScrapServiceImpl  : ----------> FIN DE BUSCAR PRODUCTOS
+2025-03-17T13:27:42.445+01:00  INFO 16888 --- [microservice-scrap-consum] [http-nio-auto-1-exec-2] c.a.scrap.controller.ScrapController     : ---------> BUSCANDO PRODUCTOS - REST CONTROLLER (microservice-scrap-consum)
+2025-03-17T13:27:42.459+01:00  INFO 16888 --- [microservice-scrap-consum] [http-nio-auto-1-exec-2] i.g.bonigarcia.wdm.WebDriverManager      : Using chromedriver 134.0.6998.88 (resolved driver for Chrome 134)
+2025-03-17T13:27:42.471+01:00  INFO 16888 --- [microservice-scrap-consum] [http-nio-auto-1-exec-2] i.g.bonigarcia.wdm.WebDriverManager      : Exporting webdriver.chrome.driver as C:\Users\Andres\.cache\selenium\chromedriver\win64\134.0.6998.88\chromedriver.exe
+2025-03-17T13:27:43.144+01:00  WARN 16888 --- [microservice-scrap-consum] [http-nio-auto-1-exec-2] o.o.selenium.devtools.CdpVersionFinder   : Unable to find CDP implementation matching 134
+2025-03-17T13:27:43.145+01:00  WARN 16888 --- [microservice-scrap-consum] [http-nio-auto-1-exec-2] o.o.selenium.chromium.ChromiumDriver     : Unable to find version of CDP to use for 134.0.6998.89. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.25.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
+2025-03-17T13:27:59.591+01:00  INFO 16888 --- [microservice-scrap-consum] [http-nio-auto-1-exec-2] c.a.scrap.service.impl.ScrapServiceImpl  : ----------> TIEMPO TRANSCURRIDO: 17 SEGUNDOS.
+2025-03-17T13:27:59.592+01:00  INFO 16888 --- [microservice-scrap-consum] [http-nio-auto-1-exec-2] c.a.scrap.service.impl.ScrapServiceImpl  : ----------> FIN DE BUSCAR PRODUCTOS
+2025-03-17T13:28:20.855+01:00  INFO 16888 --- [microservice-scrap-consum] [http-nio-auto-1-exec-3] c.a.scrap.controller.ScrapController     : ---------> BUSCANDO PRODUCTOS - REST CONTROLLER (microservice-scrap-consum)
+2025-03-17T13:28:20.876+01:00  INFO 16888 --- [microservice-scrap-consum] [http-nio-auto-1-exec-3] i.g.bonigarcia.wdm.WebDriverManager      : Using chromedriver 134.0.6998.88 (resolved driver for Chrome 134)
+2025-03-17T13:28:20.890+01:00  INFO 16888 --- [microservice-scrap-consum] [http-nio-auto-1-exec-3] i.g.bonigarcia.wdm.WebDriverManager      : Exporting webdriver.chrome.driver as C:\Users\Andres\.cache\selenium\chromedriver\win64\134.0.6998.88\chromedriver.exe
+2025-03-17T13:28:21.571+01:00  WARN 16888 --- [microservice-scrap-consum] [http-nio-auto-1-exec-3] o.o.selenium.devtools.CdpVersionFinder   : Unable to find CDP implementation matching 134
+2025-03-17T13:28:21.571+01:00  WARN 16888 --- [microservice-scrap-consum] [http-nio-auto-1-exec-3] o.o.selenium.chromium.ChromiumDriver     : Unable to find version of CDP to use for 134.0.6998.89. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.25.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
+2025-03-17T13:28:41.136+01:00  INFO 16888 --- [microservice-scrap-consum] [http-nio-auto-1-exec-3] c.a.scrap.service.impl.ScrapServiceImpl  : ----------> TIEMPO TRANSCURRIDO: 20 SEGUNDOS.
+2025-03-17T13:28:41.136+01:00  INFO 16888 --- [microservice-scrap-consum] [http-nio-auto-1-exec-3] c.a.scrap.service.impl.ScrapServiceImpl  : ----------> FIN DE BUSCAR PRODUCTOS
+2025-03-17T13:31:18.727+01:00  INFO 16888 --- [microservice-scrap-consum] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-03-17T13:33:29.669+01:00  INFO 16888 --- [microservice-scrap-consum] [http-nio-auto-1-exec-5] c.a.scrap.controller.ScrapController     : ---------> BUSCANDO PRODUCTOS - REST CONTROLLER (microservice-scrap-consum)
+2025-03-17T13:33:29.692+01:00  INFO 16888 --- [microservice-scrap-consum] [http-nio-auto-1-exec-5] i.g.bonigarcia.wdm.WebDriverManager      : Using chromedriver 134.0.6998.88 (resolved driver for Chrome 134)
+2025-03-17T13:33:29.702+01:00  INFO 16888 --- [microservice-scrap-consum] [http-nio-auto-1-exec-5] i.g.bonigarcia.wdm.WebDriverManager      : Exporting webdriver.chrome.driver as C:\Users\Andres\.cache\selenium\chromedriver\win64\134.0.6998.88\chromedriver.exe
+2025-03-17T13:33:30.361+01:00  WARN 16888 --- [microservice-scrap-consum] [http-nio-auto-1-exec-5] o.o.selenium.devtools.CdpVersionFinder   : Unable to find CDP implementation matching 134
+2025-03-17T13:33:30.362+01:00  WARN 16888 --- [microservice-scrap-consum] [http-nio-auto-1-exec-5] o.o.selenium.chromium.ChromiumDriver     : Unable to find version of CDP to use for 134.0.6998.89. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.25.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
+2025-03-17T13:33:44.482+01:00  INFO 16888 --- [microservice-scrap-consum] [http-nio-auto-1-exec-5] c.a.scrap.service.impl.ScrapServiceImpl  : ----------> TIEMPO TRANSCURRIDO: 14 SEGUNDOS.
+2025-03-17T13:33:44.483+01:00  INFO 16888 --- [microservice-scrap-consum] [http-nio-auto-1-exec-5] c.a.scrap.service.impl.ScrapServiceImpl  : ----------> FIN DE BUSCAR PRODUCTOS
+2025-03-17T13:34:09.651+01:00  INFO 16888 --- [microservice-scrap-consum] [http-nio-auto-1-exec-6] c.a.scrap.controller.ScrapController     : ---------> BUSCANDO PRODUCTOS - REST CONTROLLER (microservice-scrap-consum)
+2025-03-17T13:34:09.675+01:00  INFO 16888 --- [microservice-scrap-consum] [http-nio-auto-1-exec-6] i.g.bonigarcia.wdm.WebDriverManager      : Using chromedriver 134.0.6998.88 (resolved driver for Chrome 134)
+2025-03-17T13:34:09.688+01:00  INFO 16888 --- [microservice-scrap-consum] [http-nio-auto-1-exec-6] i.g.bonigarcia.wdm.WebDriverManager      : Exporting webdriver.chrome.driver as C:\Users\Andres\.cache\selenium\chromedriver\win64\134.0.6998.88\chromedriver.exe
+2025-03-17T13:34:10.492+01:00  WARN 16888 --- [microservice-scrap-consum] [http-nio-auto-1-exec-6] o.o.selenium.devtools.CdpVersionFinder   : Unable to find CDP implementation matching 134
+2025-03-17T13:34:10.492+01:00  WARN 16888 --- [microservice-scrap-consum] [http-nio-auto-1-exec-6] o.o.selenium.chromium.ChromiumDriver     : Unable to find version of CDP to use for 134.0.6998.89. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.25.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
+2025-03-17T13:34:28.551+01:00  INFO 16888 --- [microservice-scrap-consum] [http-nio-auto-1-exec-6] c.a.scrap.service.impl.ScrapServiceImpl  : ----------> TIEMPO TRANSCURRIDO: 18 SEGUNDOS.
+2025-03-17T13:34:28.552+01:00  INFO 16888 --- [microservice-scrap-consum] [http-nio-auto-1-exec-6] c.a.scrap.service.impl.ScrapServiceImpl  : ----------> FIN DE BUSCAR PRODUCTOS
+2025-03-17T13:36:18.741+01:00  INFO 16888 --- [microservice-scrap-consum] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-03-17T13:41:05.387+01:00  INFO 16888 --- [microservice-scrap-consum] [RMI TCP Connection(24)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2025-03-17T13:41:05.389+01:00  INFO 16888 --- [microservice-scrap-consum] [RMI TCP Connection(24)-127.0.0.1] o.s.c.n.e.s.EurekaServiceRegistry        : Unregistering application MICROSERVICE-SCRAP-CONSUM with eureka with status DOWN
+2025-03-17T13:41:05.390+01:00  INFO 16888 --- [microservice-scrap-consum] [RMI TCP Connection(24)-127.0.0.1] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1742215265390, current=DOWN, previous=UP]
+2025-03-17T13:41:05.390+01:00  INFO 16888 --- [microservice-scrap-consum] [DiscoveryClient-InstanceInfoReplicator-%d] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_MICROSERVICE-SCRAP-CONSUM/microservice-scrap-consum:aca79ec1dab9b2f3ed8288901760aa60: registering service...
+2025-03-17T13:41:05.395+01:00  INFO 16888 --- [microservice-scrap-consum] [RMI TCP Connection(24)-127.0.0.1] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-03-17T13:41:05.408+01:00  INFO 16888 --- [microservice-scrap-consum] [DiscoveryClient-InstanceInfoReplicator-%d] c.n.d.s.t.d.RedirectingEurekaHttpClient  : Request execution error. endpoint=DefaultEndpoint{ serviceUrl='http://localhost:8761/eureka/} exception=I/O error on POST request for "http://localhost:8761/eureka/apps/MICROSERVICE-SCRAP-CONSUM": Connect to http://localhost:8761 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: getsockopt stacktrace=org.springframework.web.client.ResourceAccessException: I/O error on POST request for "http://localhost:8761/eureka/apps/MICROSERVICE-SCRAP-CONSUM": Connect to http://localhost:8761 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: getsockopt
+	at org.springframework.web.client.RestTemplate.createResourceAccessException(RestTemplate.java:925)
+	at org.springframework.web.client.RestTemplate.doExecute(RestTemplate.java:905)
+	at org.springframework.web.client.RestTemplate.execute(RestTemplate.java:840)
+	at org.springframework.web.client.RestTemplate.exchange(RestTemplate.java:701)
+	at org.springframework.cloud.netflix.eureka.http.RestTemplateEurekaHttpClient.register(RestTemplateEurekaHttpClient.java:87)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$1.execute(EurekaHttpClientDecorator.java:59)
+	at com.netflix.discovery.shared.transport.decorator.RedirectingEurekaHttpClient.execute(RedirectingEurekaHttpClient.java:91)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.register(EurekaHttpClientDecorator.java:56)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$1.execute(EurekaHttpClientDecorator.java:59)
+	at com.netflix.discovery.shared.transport.decorator.RetryableEurekaHttpClient.execute(RetryableEurekaHttpClient.java:120)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.register(EurekaHttpClientDecorator.java:56)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$1.execute(EurekaHttpClientDecorator.java:59)
+	at com.netflix.discovery.shared.transport.decorator.SessionedEurekaHttpClient.execute(SessionedEurekaHttpClient.java:76)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.register(EurekaHttpClientDecorator.java:56)
+	at com.netflix.discovery.DiscoveryClient.register(DiscoveryClient.java:828)
+	at com.netflix.discovery.InstanceInfoReplicator.run(InstanceInfoReplicator.java:125)
+	at com.netflix.discovery.InstanceInfoReplicator$2.run(InstanceInfoReplicator.java:105)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:304)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+Caused by: org.apache.hc.client5.http.HttpHostConnectException: Connect to http://localhost:8761 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: getsockopt
+	at java.base/sun.nio.ch.Net.pollConnect(Native Method)
+	at java.base/sun.nio.ch.Net.pollConnectNow(Net.java:682)
+	at java.base/sun.nio.ch.NioSocketImpl.timedFinishConnect(NioSocketImpl.java:542)
+	at java.base/sun.nio.ch.NioSocketImpl.connect(NioSocketImpl.java:592)
+	at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:327)
+	at java.base/java.net.Socket.connect(Socket.java:751)
+	at org.apache.hc.client5.http.impl.io.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:216)
+	at org.apache.hc.client5.http.impl.io.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:490)
+	at org.apache.hc.client5.http.impl.classic.InternalExecRuntime.connectEndpoint(InternalExecRuntime.java:164)
+	at org.apache.hc.client5.http.impl.classic.InternalExecRuntime.connectEndpoint(InternalExecRuntime.java:174)
+	at org.apache.hc.client5.http.impl.classic.ConnectExec.execute(ConnectExec.java:144)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
+	at org.apache.hc.client5.http.impl.classic.ProtocolExec.execute(ProtocolExec.java:192)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
+	at org.apache.hc.client5.http.impl.classic.ContentCompressionExec.execute(ContentCompressionExec.java:150)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
+	at org.apache.hc.client5.http.impl.classic.HttpRequestRetryExec.execute(HttpRequestRetryExec.java:113)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
+	at org.apache.hc.client5.http.impl.classic.RedirectExec.execute(RedirectExec.java:110)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
+	at org.apache.hc.client5.http.impl.classic.InternalHttpClient.doExecute(InternalHttpClient.java:174)
+	at org.apache.hc.client5.http.impl.classic.CloseableHttpClient.execute(CloseableHttpClient.java:87)
+	at org.apache.hc.client5.http.impl.classic.CloseableHttpClient.execute(CloseableHttpClient.java:55)
+	at org.apache.hc.client5.http.classic.HttpClient.executeOpen(HttpClient.java:183)
+	at org.springframework.http.client.HttpComponentsClientHttpRequest.executeInternal(HttpComponentsClientHttpRequest.java:99)
+	at org.springframework.http.client.AbstractStreamingClientHttpRequest.executeInternal(AbstractStreamingClientHttpRequest.java:71)
+	at org.springframework.http.client.AbstractClientHttpRequest.execute(AbstractClientHttpRequest.java:81)
+	at org.springframework.http.client.InterceptingClientHttpRequest$InterceptingRequestExecution.execute(InterceptingClientHttpRequest.java:117)
+	at org.springframework.cloud.netflix.eureka.http.RestTemplateTransportClientFactory.lambda$restTemplate$3(RestTemplateTransportClientFactory.java:141)
+	at org.springframework.http.client.InterceptingClientHttpRequest$InterceptingRequestExecution.execute(InterceptingClientHttpRequest.java:88)
+	at org.springframework.http.client.InterceptingClientHttpRequest.executeInternal(InterceptingClientHttpRequest.java:72)
+	at org.springframework.http.client.AbstractBufferingClientHttpRequest.executeInternal(AbstractBufferingClientHttpRequest.java:48)
+	at org.springframework.http.client.AbstractClientHttpRequest.execute(AbstractClientHttpRequest.java:81)
+	at org.springframework.web.client.RestTemplate.doExecute(RestTemplate.java:899)
+	... 21 more
+
+2025-03-17T13:41:05.408+01:00  WARN 16888 --- [microservice-scrap-consum] [DiscoveryClient-InstanceInfoReplicator-%d] c.n.d.s.t.d.RetryableEurekaHttpClient    : Request execution failed with message: I/O error on POST request for "http://localhost:8761/eureka/apps/MICROSERVICE-SCRAP-CONSUM": Connect to http://localhost:8761 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: getsockopt
+2025-03-17T13:41:05.411+01:00  INFO 16888 --- [microservice-scrap-consum] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-03-17T13:41:05.418+01:00  INFO 16888 --- [microservice-scrap-consum] [RMI TCP Connection(24)-127.0.0.1] com.netflix.discovery.DiscoveryClient    : Shutting down DiscoveryClient ...
+2025-03-17T13:41:05.428+01:00  INFO 16888 --- [microservice-scrap-consum] [DiscoveryClient-InstanceInfoReplicator-%d] c.n.d.s.t.d.RedirectingEurekaHttpClient  : Request execution error. endpoint=DefaultEndpoint{ serviceUrl='http://localhost:8761/eureka/}, exception=I/O error on POST request for "http://localhost:8761/eureka/apps/MICROSERVICE-SCRAP-CONSUM": Connect to http://localhost:8761 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: getsockopt stacktrace=org.springframework.web.client.ResourceAccessException: I/O error on POST request for "http://localhost:8761/eureka/apps/MICROSERVICE-SCRAP-CONSUM": Connect to http://localhost:8761 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: getsockopt
+	at org.springframework.web.client.RestTemplate.createResourceAccessException(RestTemplate.java:925)
+	at org.springframework.web.client.RestTemplate.doExecute(RestTemplate.java:905)
+	at org.springframework.web.client.RestTemplate.execute(RestTemplate.java:840)
+	at org.springframework.web.client.RestTemplate.exchange(RestTemplate.java:701)
+	at org.springframework.cloud.netflix.eureka.http.RestTemplateEurekaHttpClient.register(RestTemplateEurekaHttpClient.java:87)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$1.execute(EurekaHttpClientDecorator.java:59)
+	at com.netflix.discovery.shared.transport.decorator.RedirectingEurekaHttpClient.executeOnNewServer(RedirectingEurekaHttpClient.java:121)
+	at com.netflix.discovery.shared.transport.decorator.RedirectingEurekaHttpClient.execute(RedirectingEurekaHttpClient.java:80)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.register(EurekaHttpClientDecorator.java:56)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$1.execute(EurekaHttpClientDecorator.java:59)
+	at com.netflix.discovery.shared.transport.decorator.RetryableEurekaHttpClient.execute(RetryableEurekaHttpClient.java:120)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.register(EurekaHttpClientDecorator.java:56)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$1.execute(EurekaHttpClientDecorator.java:59)
+	at com.netflix.discovery.shared.transport.decorator.SessionedEurekaHttpClient.execute(SessionedEurekaHttpClient.java:76)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.register(EurekaHttpClientDecorator.java:56)
+	at com.netflix.discovery.DiscoveryClient.register(DiscoveryClient.java:828)
+	at com.netflix.discovery.InstanceInfoReplicator.run(InstanceInfoReplicator.java:125)
+	at com.netflix.discovery.InstanceInfoReplicator$2.run(InstanceInfoReplicator.java:105)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:304)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+Caused by: org.apache.hc.client5.http.HttpHostConnectException: Connect to http://localhost:8761 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: getsockopt
+	at java.base/sun.nio.ch.Net.pollConnect(Native Method)
+	at java.base/sun.nio.ch.Net.pollConnectNow(Net.java:682)
+	at java.base/sun.nio.ch.NioSocketImpl.timedFinishConnect(NioSocketImpl.java:542)
+	at java.base/sun.nio.ch.NioSocketImpl.connect(NioSocketImpl.java:592)
+	at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:327)
+	at java.base/java.net.Socket.connect(Socket.java:751)
+	at org.apache.hc.client5.http.impl.io.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:216)
+	at org.apache.hc.client5.http.impl.io.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:490)
+	at org.apache.hc.client5.http.impl.classic.InternalExecRuntime.connectEndpoint(InternalExecRuntime.java:164)
+	at org.apache.hc.client5.http.impl.classic.InternalExecRuntime.connectEndpoint(InternalExecRuntime.java:174)
+	at org.apache.hc.client5.http.impl.classic.ConnectExec.execute(ConnectExec.java:144)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
+	at org.apache.hc.client5.http.impl.classic.ProtocolExec.execute(ProtocolExec.java:192)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
+	at org.apache.hc.client5.http.impl.classic.ContentCompressionExec.execute(ContentCompressionExec.java:150)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
+	at org.apache.hc.client5.http.impl.classic.HttpRequestRetryExec.execute(HttpRequestRetryExec.java:113)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
+	at org.apache.hc.client5.http.impl.classic.RedirectExec.execute(RedirectExec.java:110)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
+	at org.apache.hc.client5.http.impl.classic.InternalHttpClient.doExecute(InternalHttpClient.java:174)
+	at org.apache.hc.client5.http.impl.classic.CloseableHttpClient.execute(CloseableHttpClient.java:87)
+	at org.apache.hc.client5.http.impl.classic.CloseableHttpClient.execute(CloseableHttpClient.java:55)
+	at org.apache.hc.client5.http.classic.HttpClient.executeOpen(HttpClient.java:183)
+	at org.springframework.http.client.HttpComponentsClientHttpRequest.executeInternal(HttpComponentsClientHttpRequest.java:99)
+	at org.springframework.http.client.AbstractStreamingClientHttpRequest.executeInternal(AbstractStreamingClientHttpRequest.java:71)
+	at org.springframework.http.client.AbstractClientHttpRequest.execute(AbstractClientHttpRequest.java:81)
+	at org.springframework.http.client.InterceptingClientHttpRequest$InterceptingRequestExecution.execute(InterceptingClientHttpRequest.java:117)
+	at org.springframework.cloud.netflix.eureka.http.RestTemplateTransportClientFactory.lambda$restTemplate$3(RestTemplateTransportClientFactory.java:141)
+	at org.springframework.http.client.InterceptingClientHttpRequest$InterceptingRequestExecution.execute(InterceptingClientHttpRequest.java:88)
+	at org.springframework.http.client.InterceptingClientHttpRequest.executeInternal(InterceptingClientHttpRequest.java:72)
+	at org.springframework.http.client.AbstractBufferingClientHttpRequest.executeInternal(AbstractBufferingClientHttpRequest.java:48)
+	at org.springframework.http.client.AbstractClientHttpRequest.execute(AbstractClientHttpRequest.java:81)
+	at org.springframework.web.client.RestTemplate.doExecute(RestTemplate.java:899)
+	... 22 more
+
+2025-03-17T13:41:05.428+01:00  WARN 16888 --- [microservice-scrap-consum] [DiscoveryClient-InstanceInfoReplicator-%d] c.n.d.s.t.d.RetryableEurekaHttpClient    : Request execution failed with message: I/O error on POST request for "http://localhost:8761/eureka/apps/MICROSERVICE-SCRAP-CONSUM": Connect to http://localhost:8761 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: getsockopt
+2025-03-17T13:41:05.428+01:00  WARN 16888 --- [microservice-scrap-consum] [DiscoveryClient-InstanceInfoReplicator-%d] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_MICROSERVICE-SCRAP-CONSUM/microservice-scrap-consum:aca79ec1dab9b2f3ed8288901760aa60 - registration failed Cannot execute request on any known server
+
+com.netflix.discovery.shared.transport.TransportException: Cannot execute request on any known server
+	at com.netflix.discovery.shared.transport.decorator.RetryableEurekaHttpClient.execute(RetryableEurekaHttpClient.java:112) ~[eureka-client-2.0.4.jar:2.0.4]
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.register(EurekaHttpClientDecorator.java:56) ~[eureka-client-2.0.4.jar:2.0.4]
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$1.execute(EurekaHttpClientDecorator.java:59) ~[eureka-client-2.0.4.jar:2.0.4]
+	at com.netflix.discovery.shared.transport.decorator.SessionedEurekaHttpClient.execute(SessionedEurekaHttpClient.java:76) ~[eureka-client-2.0.4.jar:2.0.4]
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.register(EurekaHttpClientDecorator.java:56) ~[eureka-client-2.0.4.jar:2.0.4]
+	at com.netflix.discovery.DiscoveryClient.register(DiscoveryClient.java:828) ~[eureka-client-2.0.4.jar:2.0.4]
+	at com.netflix.discovery.InstanceInfoReplicator.run(InstanceInfoReplicator.java:125) ~[eureka-client-2.0.4.jar:2.0.4]
+	at com.netflix.discovery.InstanceInfoReplicator$2.run(InstanceInfoReplicator.java:105) ~[eureka-client-2.0.4.jar:2.0.4]
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572) ~[na:na]
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317) ~[na:na]
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:304) ~[na:na]
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144) ~[na:na]
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642) ~[na:na]
+	at java.base/java.lang.Thread.run(Thread.java:1583) ~[na:na]
+
+2025-03-17T13:41:05.437+01:00  WARN 16888 --- [microservice-scrap-consum] [DiscoveryClient-InstanceInfoReplicator-%d] c.n.discovery.InstanceInfoReplicator     : There was a problem with the instance info replicator
+
+com.netflix.discovery.shared.transport.TransportException: Cannot execute request on any known server
+	at com.netflix.discovery.shared.transport.decorator.RetryableEurekaHttpClient.execute(RetryableEurekaHttpClient.java:112) ~[eureka-client-2.0.4.jar:2.0.4]
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.register(EurekaHttpClientDecorator.java:56) ~[eureka-client-2.0.4.jar:2.0.4]
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$1.execute(EurekaHttpClientDecorator.java:59) ~[eureka-client-2.0.4.jar:2.0.4]
+	at com.netflix.discovery.shared.transport.decorator.SessionedEurekaHttpClient.execute(SessionedEurekaHttpClient.java:76) ~[eureka-client-2.0.4.jar:2.0.4]
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.register(EurekaHttpClientDecorator.java:56) ~[eureka-client-2.0.4.jar:2.0.4]
+	at com.netflix.discovery.DiscoveryClient.register(DiscoveryClient.java:828) ~[eureka-client-2.0.4.jar:2.0.4]
+	at com.netflix.discovery.InstanceInfoReplicator.run(InstanceInfoReplicator.java:125) ~[eureka-client-2.0.4.jar:2.0.4]
+	at com.netflix.discovery.InstanceInfoReplicator$2.run(InstanceInfoReplicator.java:105) ~[eureka-client-2.0.4.jar:2.0.4]
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572) ~[na:na]
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317) ~[na:na]
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:304) ~[na:na]
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144) ~[na:na]
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642) ~[na:na]
+	at java.base/java.lang.Thread.run(Thread.java:1583) ~[na:na]
+
+2025-03-17T13:41:05.440+01:00  INFO 16888 --- [microservice-scrap-consum] [RMI TCP Connection(24)-127.0.0.1] com.netflix.discovery.DiscoveryClient    : Unregistering ...
+2025-03-17T13:41:05.479+01:00  INFO 16888 --- [microservice-scrap-consum] [RMI TCP Connection(24)-127.0.0.1] c.n.d.s.t.d.RedirectingEurekaHttpClient  : Request execution error. endpoint=DefaultEndpoint{ serviceUrl='http://localhost:8761/eureka/}, exception=I/O error on DELETE request for "http://localhost:8761/eureka/apps/MICROSERVICE-SCRAP-CONSUM/microservice-scrap-consum:aca79ec1dab9b2f3ed8288901760aa60": Connect to http://localhost:8761 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: getsockopt stacktrace=org.springframework.web.client.ResourceAccessException: I/O error on DELETE request for "http://localhost:8761/eureka/apps/MICROSERVICE-SCRAP-CONSUM/microservice-scrap-consum:aca79ec1dab9b2f3ed8288901760aa60": Connect to http://localhost:8761 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: getsockopt
+	at org.springframework.web.client.RestTemplate.createResourceAccessException(RestTemplate.java:925)
+	at org.springframework.web.client.RestTemplate.doExecute(RestTemplate.java:905)
+	at org.springframework.web.client.RestTemplate.execute(RestTemplate.java:840)
+	at org.springframework.web.client.RestTemplate.exchange(RestTemplate.java:701)
+	at org.springframework.cloud.netflix.eureka.http.RestTemplateEurekaHttpClient.cancel(RestTemplateEurekaHttpClient.java:100)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$2.execute(EurekaHttpClientDecorator.java:74)
+	at com.netflix.discovery.shared.transport.decorator.RedirectingEurekaHttpClient.executeOnNewServer(RedirectingEurekaHttpClient.java:121)
+	at com.netflix.discovery.shared.transport.decorator.RedirectingEurekaHttpClient.execute(RedirectingEurekaHttpClient.java:80)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.cancel(EurekaHttpClientDecorator.java:71)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$2.execute(EurekaHttpClientDecorator.java:74)
+	at com.netflix.discovery.shared.transport.decorator.RetryableEurekaHttpClient.execute(RetryableEurekaHttpClient.java:120)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.cancel(EurekaHttpClientDecorator.java:71)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$2.execute(EurekaHttpClientDecorator.java:74)
+	at com.netflix.discovery.shared.transport.decorator.SessionedEurekaHttpClient.execute(SessionedEurekaHttpClient.java:76)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.cancel(EurekaHttpClientDecorator.java:71)
+	at com.netflix.discovery.DiscoveryClient.unregister(DiscoveryClient.java:919)
+	at com.netflix.discovery.DiscoveryClient.shutdown(DiscoveryClient.java:900)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor$LifecycleMethod.invoke(InitDestroyAnnotationBeanPostProcessor.java:457)
+	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor$LifecycleMetadata.invokeDestroyMethods(InitDestroyAnnotationBeanPostProcessor.java:415)
+	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor.postProcessBeforeDestruction(InitDestroyAnnotationBeanPostProcessor.java:239)
+	at org.springframework.beans.factory.support.DisposableBeanAdapter.destroy(DisposableBeanAdapter.java:202)
+	at org.springframework.beans.factory.support.DisposableBeanAdapter.run(DisposableBeanAdapter.java:195)
+	at org.springframework.cloud.context.scope.GenericScope$BeanLifecycleWrapper.destroy(GenericScope.java:389)
+	at org.springframework.cloud.context.scope.GenericScope.destroy(GenericScope.java:136)
+	at org.springframework.beans.factory.support.DisposableBeanAdapter.destroy(DisposableBeanAdapter.java:211)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.destroyBean(DefaultSingletonBeanRegistry.java:735)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.destroySingleton(DefaultSingletonBeanRegistry.java:692)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.destroySingleton(DefaultListableBeanFactory.java:1401)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.destroySingletons(DefaultSingletonBeanRegistry.java:651)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.destroySingletons(DefaultListableBeanFactory.java:1394)
+	at org.springframework.context.support.AbstractApplicationContext.destroyBeans(AbstractApplicationContext.java:1219)
+	at org.springframework.context.support.AbstractApplicationContext.doClose(AbstractApplicationContext.java:1180)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.doClose(ServletWebServerApplicationContext.java:179)
+	at org.springframework.context.support.AbstractApplicationContext.close(AbstractApplicationContext.java:1126)
+	at org.springframework.boot.admin.SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin.shutdown(SpringApplicationAdminMXBeanRegistrar.java:160)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at sun.reflect.misc.Trampoline.invoke(MethodUtil.java:64)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at java.base/sun.reflect.misc.MethodUtil.invoke(MethodUtil.java:97)
+	at java.management/com.sun.jmx.mbeanserver.ConvertingMethod.invokeWithOpenReturn(ConvertingMethod.java:193)
+	at java.management/com.sun.jmx.mbeanserver.ConvertingMethod.invokeWithOpenReturn(ConvertingMethod.java:175)
+	at java.management/com.sun.jmx.mbeanserver.MXBeanIntrospector.invokeM2(MXBeanIntrospector.java:115)
+	at java.management/com.sun.jmx.mbeanserver.MXBeanIntrospector.invokeM2(MXBeanIntrospector.java:52)
+	at java.management/com.sun.jmx.mbeanserver.MBeanIntrospector.invokeM(MBeanIntrospector.java:236)
+	at java.management/com.sun.jmx.mbeanserver.PerInterface.invoke(PerInterface.java:138)
+	at java.management/com.sun.jmx.mbeanserver.MBeanSupport.invoke(MBeanSupport.java:252)
+	at java.management/com.sun.jmx.interceptor.DefaultMBeanServerInterceptor.invoke(DefaultMBeanServerInterceptor.java:803)
+	at java.management/com.sun.jmx.mbeanserver.JmxMBeanServer.invoke(JmxMBeanServer.java:802)
+	at java.management.rmi/javax.management.remote.rmi.RMIConnectionImpl.doOperation(RMIConnectionImpl.java:1472)
+	at java.management.rmi/javax.management.remote.rmi.RMIConnectionImpl$PrivilegedOperation.run(RMIConnectionImpl.java:1310)
+	at java.management.rmi/javax.management.remote.rmi.RMIConnectionImpl.doPrivilegedOperation(RMIConnectionImpl.java:1405)
+	at java.management.rmi/javax.management.remote.rmi.RMIConnectionImpl.invoke(RMIConnectionImpl.java:829)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at java.rmi/sun.rmi.server.UnicastServerRef.dispatch(UnicastServerRef.java:360)
+	at java.rmi/sun.rmi.transport.Transport$1.run(Transport.java:200)
+	at java.rmi/sun.rmi.transport.Transport$1.run(Transport.java:197)
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:714)
+	at java.rmi/sun.rmi.transport.Transport.serviceCall(Transport.java:196)
+	at java.rmi/sun.rmi.transport.tcp.TCPTransport.handleMessages(TCPTransport.java:598)
+	at java.rmi/sun.rmi.transport.tcp.TCPTransport$ConnectionHandler.run0(TCPTransport.java:844)
+	at java.rmi/sun.rmi.transport.tcp.TCPTransport$ConnectionHandler.lambda$run$0(TCPTransport.java:721)
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:400)
+	at java.rmi/sun.rmi.transport.tcp.TCPTransport$ConnectionHandler.run(TCPTransport.java:720)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+Caused by: org.apache.hc.client5.http.HttpHostConnectException: Connect to http://localhost:8761 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: getsockopt
+	at java.base/sun.nio.ch.Net.pollConnect(Native Method)
+	at java.base/sun.nio.ch.Net.pollConnectNow(Net.java:682)
+	at java.base/sun.nio.ch.NioSocketImpl.timedFinishConnect(NioSocketImpl.java:542)
+	at java.base/sun.nio.ch.NioSocketImpl.connect(NioSocketImpl.java:592)
+	at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:327)
+	at java.base/java.net.Socket.connect(Socket.java:751)
+	at org.apache.hc.client5.http.impl.io.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:216)
+	at org.apache.hc.client5.http.impl.io.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:490)
+	at org.apache.hc.client5.http.impl.classic.InternalExecRuntime.connectEndpoint(InternalExecRuntime.java:164)
+	at org.apache.hc.client5.http.impl.classic.InternalExecRuntime.connectEndpoint(InternalExecRuntime.java:174)
+	at org.apache.hc.client5.http.impl.classic.ConnectExec.execute(ConnectExec.java:144)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
+	at org.apache.hc.client5.http.impl.classic.ProtocolExec.execute(ProtocolExec.java:192)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
+	at org.apache.hc.client5.http.impl.classic.ContentCompressionExec.execute(ContentCompressionExec.java:150)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
+	at org.apache.hc.client5.http.impl.classic.HttpRequestRetryExec.execute(HttpRequestRetryExec.java:113)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
+	at org.apache.hc.client5.http.impl.classic.RedirectExec.execute(RedirectExec.java:110)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
+	at org.apache.hc.client5.http.impl.classic.InternalHttpClient.doExecute(InternalHttpClient.java:174)
+	at org.apache.hc.client5.http.impl.classic.CloseableHttpClient.execute(CloseableHttpClient.java:87)
+	at org.apache.hc.client5.http.impl.classic.CloseableHttpClient.execute(CloseableHttpClient.java:55)
+	at org.apache.hc.client5.http.classic.HttpClient.executeOpen(HttpClient.java:183)
+	at org.springframework.http.client.HttpComponentsClientHttpRequest.executeInternal(HttpComponentsClientHttpRequest.java:99)
+	at org.springframework.http.client.AbstractStreamingClientHttpRequest.executeInternal(AbstractStreamingClientHttpRequest.java:71)
+	at org.springframework.http.client.AbstractClientHttpRequest.execute(AbstractClientHttpRequest.java:81)
+	at org.springframework.http.client.InterceptingClientHttpRequest$InterceptingRequestExecution.execute(InterceptingClientHttpRequest.java:117)
+	at org.springframework.cloud.netflix.eureka.http.RestTemplateTransportClientFactory.lambda$restTemplate$3(RestTemplateTransportClientFactory.java:141)
+	at org.springframework.http.client.InterceptingClientHttpRequest$InterceptingRequestExecution.execute(InterceptingClientHttpRequest.java:88)
+	at org.springframework.http.client.InterceptingClientHttpRequest.executeInternal(InterceptingClientHttpRequest.java:72)
+	at org.springframework.http.client.AbstractBufferingClientHttpRequest.executeInternal(AbstractBufferingClientHttpRequest.java:48)
+	at org.springframework.http.client.AbstractClientHttpRequest.execute(AbstractClientHttpRequest.java:81)
+	at org.springframework.web.client.RestTemplate.doExecute(RestTemplate.java:899)
+	... 69 more
+
+2025-03-17T13:41:05.480+01:00  WARN 16888 --- [microservice-scrap-consum] [RMI TCP Connection(24)-127.0.0.1] c.n.d.s.t.d.RetryableEurekaHttpClient    : Request execution failed with message: I/O error on DELETE request for "http://localhost:8761/eureka/apps/MICROSERVICE-SCRAP-CONSUM/microservice-scrap-consum:aca79ec1dab9b2f3ed8288901760aa60": Connect to http://localhost:8761 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: getsockopt
+2025-03-17T13:41:05.480+01:00 ERROR 16888 --- [microservice-scrap-consum] [RMI TCP Connection(24)-127.0.0.1] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_MICROSERVICE-SCRAP-CONSUM/microservice-scrap-consum:aca79ec1dab9b2f3ed8288901760aa60 - de-registration failedCannot execute request on any known server
+
+com.netflix.discovery.shared.transport.TransportException: Cannot execute request on any known server
+	at com.netflix.discovery.shared.transport.decorator.RetryableEurekaHttpClient.execute(RetryableEurekaHttpClient.java:112) ~[eureka-client-2.0.4.jar:2.0.4]
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.cancel(EurekaHttpClientDecorator.java:71) ~[eureka-client-2.0.4.jar:2.0.4]
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$2.execute(EurekaHttpClientDecorator.java:74) ~[eureka-client-2.0.4.jar:2.0.4]
+	at com.netflix.discovery.shared.transport.decorator.SessionedEurekaHttpClient.execute(SessionedEurekaHttpClient.java:76) ~[eureka-client-2.0.4.jar:2.0.4]
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.cancel(EurekaHttpClientDecorator.java:71) ~[eureka-client-2.0.4.jar:2.0.4]
+	at com.netflix.discovery.DiscoveryClient.unregister(DiscoveryClient.java:919) ~[eureka-client-2.0.4.jar:2.0.4]
+	at com.netflix.discovery.DiscoveryClient.shutdown(DiscoveryClient.java:900) ~[eureka-client-2.0.4.jar:2.0.4]
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580) ~[na:na]
+	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor$LifecycleMethod.invoke(InitDestroyAnnotationBeanPostProcessor.java:457) ~[spring-beans-6.2.3.jar:6.2.3]
+	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor$LifecycleMetadata.invokeDestroyMethods(InitDestroyAnnotationBeanPostProcessor.java:415) ~[spring-beans-6.2.3.jar:6.2.3]
+	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor.postProcessBeforeDestruction(InitDestroyAnnotationBeanPostProcessor.java:239) ~[spring-beans-6.2.3.jar:6.2.3]
+	at org.springframework.beans.factory.support.DisposableBeanAdapter.destroy(DisposableBeanAdapter.java:202) ~[spring-beans-6.2.3.jar:6.2.3]
+	at org.springframework.beans.factory.support.DisposableBeanAdapter.run(DisposableBeanAdapter.java:195) ~[spring-beans-6.2.3.jar:6.2.3]
+	at org.springframework.cloud.context.scope.GenericScope$BeanLifecycleWrapper.destroy(GenericScope.java:389) ~[spring-cloud-context-4.2.0.jar:4.2.0]
+	at org.springframework.cloud.context.scope.GenericScope.destroy(GenericScope.java:136) ~[spring-cloud-context-4.2.0.jar:4.2.0]
+	at org.springframework.beans.factory.support.DisposableBeanAdapter.destroy(DisposableBeanAdapter.java:211) ~[spring-beans-6.2.3.jar:6.2.3]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.destroyBean(DefaultSingletonBeanRegistry.java:735) ~[spring-beans-6.2.3.jar:6.2.3]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.destroySingleton(DefaultSingletonBeanRegistry.java:692) ~[spring-beans-6.2.3.jar:6.2.3]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.destroySingleton(DefaultListableBeanFactory.java:1401) ~[spring-beans-6.2.3.jar:6.2.3]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.destroySingletons(DefaultSingletonBeanRegistry.java:651) ~[spring-beans-6.2.3.jar:6.2.3]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.destroySingletons(DefaultListableBeanFactory.java:1394) ~[spring-beans-6.2.3.jar:6.2.3]
+	at org.springframework.context.support.AbstractApplicationContext.destroyBeans(AbstractApplicationContext.java:1219) ~[spring-context-6.2.3.jar:6.2.3]
+	at org.springframework.context.support.AbstractApplicationContext.doClose(AbstractApplicationContext.java:1180) ~[spring-context-6.2.3.jar:6.2.3]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.doClose(ServletWebServerApplicationContext.java:179) ~[spring-boot-3.4.3.jar:3.4.3]
+	at org.springframework.context.support.AbstractApplicationContext.close(AbstractApplicationContext.java:1126) ~[spring-context-6.2.3.jar:6.2.3]
+	at org.springframework.boot.admin.SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin.shutdown(SpringApplicationAdminMXBeanRegistrar.java:160) ~[spring-boot-3.4.3.jar:3.4.3]
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580) ~[na:na]
+	at sun.reflect.misc.Trampoline.invoke(MethodUtil.java:64) ~[na:na]
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580) ~[na:na]
+	at java.base/sun.reflect.misc.MethodUtil.invoke(MethodUtil.java:97) ~[na:na]
+	at java.management/com.sun.jmx.mbeanserver.ConvertingMethod.invokeWithOpenReturn(ConvertingMethod.java:193) ~[na:na]
+	at java.management/com.sun.jmx.mbeanserver.ConvertingMethod.invokeWithOpenReturn(ConvertingMethod.java:175) ~[na:na]
+	at java.management/com.sun.jmx.mbeanserver.MXBeanIntrospector.invokeM2(MXBeanIntrospector.java:115) ~[na:na]
+	at java.management/com.sun.jmx.mbeanserver.MXBeanIntrospector.invokeM2(MXBeanIntrospector.java:52) ~[na:na]
+	at java.management/com.sun.jmx.mbeanserver.MBeanIntrospector.invokeM(MBeanIntrospector.java:236) ~[na:na]
+	at java.management/com.sun.jmx.mbeanserver.PerInterface.invoke(PerInterface.java:138) ~[na:na]
+	at java.management/com.sun.jmx.mbeanserver.MBeanSupport.invoke(MBeanSupport.java:252) ~[na:na]
+	at java.management/com.sun.jmx.interceptor.DefaultMBeanServerInterceptor.invoke(DefaultMBeanServerInterceptor.java:803) ~[na:na]
+	at java.management/com.sun.jmx.mbeanserver.JmxMBeanServer.invoke(JmxMBeanServer.java:802) ~[na:na]
+	at java.management.rmi/javax.management.remote.rmi.RMIConnectionImpl.doOperation(RMIConnectionImpl.java:1472) ~[na:na]
+	at java.management.rmi/javax.management.remote.rmi.RMIConnectionImpl$PrivilegedOperation.run(RMIConnectionImpl.java:1310) ~[na:na]
+	at java.management.rmi/javax.management.remote.rmi.RMIConnectionImpl.doPrivilegedOperation(RMIConnectionImpl.java:1405) ~[na:na]
+	at java.management.rmi/javax.management.remote.rmi.RMIConnectionImpl.invoke(RMIConnectionImpl.java:829) ~[na:na]
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580) ~[na:na]
+	at java.rmi/sun.rmi.server.UnicastServerRef.dispatch(UnicastServerRef.java:360) ~[na:na]
+	at java.rmi/sun.rmi.transport.Transport$1.run(Transport.java:200) ~[na:na]
+	at java.rmi/sun.rmi.transport.Transport$1.run(Transport.java:197) ~[na:na]
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:714) ~[na:na]
+	at java.rmi/sun.rmi.transport.Transport.serviceCall(Transport.java:196) ~[na:na]
+	at java.rmi/sun.rmi.transport.tcp.TCPTransport.handleMessages(TCPTransport.java:598) ~[na:na]
+	at java.rmi/sun.rmi.transport.tcp.TCPTransport$ConnectionHandler.run0(TCPTransport.java:844) ~[na:na]
+	at java.rmi/sun.rmi.transport.tcp.TCPTransport$ConnectionHandler.lambda$run$0(TCPTransport.java:721) ~[na:na]
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:400) ~[na:na]
+	at java.rmi/sun.rmi.transport.tcp.TCPTransport$ConnectionHandler.run(TCPTransport.java:720) ~[na:na]
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144) ~[na:na]
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642) ~[na:na]
+	at java.base/java.lang.Thread.run(Thread.java:1583) ~[na:na]
+
+2025-03-17T13:41:05.482+01:00  INFO 16888 --- [microservice-scrap-consum] [RMI TCP Connection(24)-127.0.0.1] com.netflix.discovery.DiscoveryClient    : Completed shut down of DiscoveryClient
