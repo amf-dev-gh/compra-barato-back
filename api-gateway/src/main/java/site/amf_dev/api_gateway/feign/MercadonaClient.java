@@ -12,7 +12,7 @@ import jakarta.validation.constraints.Min;
 import jakarta.validation.constraints.NotBlank;
 import site.amf_dev.api_gateway.dtos.ProductDto;
 
-@FeignClient(name = "mercadona-scrapping")
+@FeignClient(name = "mercadona-scraping")
 public interface MercadonaClient {
 
 	@GetMapping("/api/mercadona/search")

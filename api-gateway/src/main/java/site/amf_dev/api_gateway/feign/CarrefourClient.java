@@ -12,7 +12,7 @@ import jakarta.validation.constraints.Min;
 import jakarta.validation.constraints.NotBlank;
 import site.amf_dev.api_gateway.dtos.ProductDto;
 
-@FeignClient(name = "carrefour-scrapping")
+@FeignClient(name = "carrefour-scraping")
 public interface CarrefourClient {
 
 	@GetMapping("/api/carrefour/search")

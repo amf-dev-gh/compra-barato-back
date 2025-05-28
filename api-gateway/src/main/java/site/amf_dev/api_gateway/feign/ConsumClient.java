@@ -12,7 +12,7 @@ import jakarta.validation.constraints.Min;
 import jakarta.validation.constraints.NotBlank;
 import site.amf_dev.api_gateway.dtos.ProductDto;
 
-@FeignClient(name = "consum-scrapping")
+@FeignClient(name = "consum-scraping")
 public interface ConsumClient {
 
 	@GetMapping("/api/consum/search")
