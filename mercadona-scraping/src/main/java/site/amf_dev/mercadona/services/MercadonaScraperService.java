@@ -244,7 +244,7 @@ public class MercadonaScraperService {
 
 			// Extraer precio
 			try {
-				String price = extractText(productElement, ".price-current", ".price", "[data-testid*='product-price']",
+				String price = extractText(productElement, ".product-price__unit-price", "[data-testid*='product-price']",
 						".product-price");
 				product.setPrice(price);
 			} catch (Exception e) {
