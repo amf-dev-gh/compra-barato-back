@@ -102,7 +102,7 @@ public class ConsumScraperService {
 	}
 
 	private Browser createBrowser(Playwright playwright) {
-		BrowserType.LaunchOptions launchOptions = new BrowserType.LaunchOptions().setChannel("chrome")
+		BrowserType.LaunchOptions launchOptions = new BrowserType.LaunchOptions()
 				.setHeadless(headless).setTimeout(timeout)
 				.setArgs(List.of("--no-sandbox", "--disable-blink-features=AutomationControlled",
 						"--disable-dev-shm-usage", "--disable-extensions", "--disable-plugins", "--disable-images",
